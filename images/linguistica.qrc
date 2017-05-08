@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/icons">
+  <!-- Window icon -->
+  <file>favicon.xpm</file>
+  <!-- "Open project" toolbar button -->
+  <file>open.xpm</file>
+  <!-- "Save project" toolbar button -->
+  <file>save.xpm</file>
+  <!-- "New project" toolbar button -->
+  <file>new.xpm</file>
+  <!-- "Reload corpus" toolbar button -->
+  <file>reload.xpm</file>
+</qresource>
+<qresource>
+  <!-- Splash screen -->
+  <file>splash.png</file>
+  <!-- Help-&gt;about backdrop -->
+  <file>uofc.xpm</file>
+</qresource>
+</RCC>

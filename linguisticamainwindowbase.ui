@@ -1,0 +1,3223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LinguisticaMainWindowBase</class>
+ <widget class="QMainWindow" name="LinguisticaMainWindowBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1268</width>
+    <height>766</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Linguistica</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images/linguistica.qrc">
+    <normaloff>:/icons/favicon.xpm</normaloff>:/icons/favicon.xpm</iconset>
+  </property>
+  <widget class="QWidget" name="widget">
+   <layout class="QHBoxLayout">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="margin">
+     <number>11</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="m_eastWestSplitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="Q3ListView" name="m_treeView">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="resizeMode">
+        <enum>Q3ListView::AllColumns</enum>
+       </property>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="clickable">
+         <bool>true</bool>
+        </property>
+        <property name="resizable">
+         <bool>true</bool>
+        </property>
+       </column>
+      </widget>
+      <widget class="QSplitter" name="m_northSouthSplitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="Q3ListView" name="m_collectionView"/>
+       <widget class="QTabWidget" name="m_InnerTabs">
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="m_CommandLineTab">
+         <attribute name="title">
+          <string>Command Line</string>
+         </attribute>
+         <layout class="QVBoxLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="margin">
+           <number>11</number>
+          </property>
+          <item>
+           <widget class="Q3TextEdit" name="m_commandLine">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="m_SmallGraphicDisplayTab">
+         <attribute name="title">
+          <string>Graphic Display</string>
+         </attribute>
+         <layout class="QVBoxLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="margin">
+           <number>11</number>
+          </property>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="dcn_stress_tab_page">
+         <attribute name="title">
+          <string>DCN Stress</string>
+         </attribute>
+         <widget class="QWidget" name="layout36">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>337</width>
+            <height>2375</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="margin">
+            <number>11</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="margin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="Q3GroupBox" name="groupBox1">
+               <property name="title">
+                <string>DCN Parameters</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <layout class="QVBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel1">
+                    <property name="text">
+                     <string>alpha:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="alphaLine">
+                    <property name="text">
+                     <string>-0.20</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel1_2">
+                    <property name="text">
+                     <string>beta:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="betaLine">
+                    <property name="text">
+                     <string>-0.60</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel1_3">
+                    <property name="text">
+                     <string>initial:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="initialLine">
+                    <property name="text">
+                     <string>1.00</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel1_4">
+                    <property name="text">
+                     <string>final:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="finalLine">
+                    <property name="text">
+                     <string>0.60</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup1">
+               <property name="title">
+                <string>-</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <layout class="QVBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="DCNstressComputeButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Compute-&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="DCNstressLearnButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>&lt;-Learn</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Q3GroupBox" name="groupBox1_2">
+             <property name="title">
+              <string>Parameters for Learning Algorithm</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <layout class="QVBoxLayout">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <property name="margin">
+               <number>11</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2">
+                  <property name="text">
+                   <string>Initial Temperature:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="TLine">
+                  <property name="text">
+                   <string>1.00</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_2">
+                  <property name="text">
+                   <string>Add When Wrong:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="iwwLine">
+                  <property name="text">
+                   <string>0.02</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_3">
+                  <property name="text">
+                   <string>Multiply by When Correct:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="dwrLine">
+                  <property name="text">
+                   <string>0.95</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_2_2">
+                  <property name="text">
+                   <string># of Trials:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="trialsLine">
+                  <property name="text">
+                   <string>100</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_4">
+                  <property name="text">
+                   <string>Max Steps Per Trial:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="cutoffLine">
+                  <property name="text">
+                   <string>1000</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_2_3">
+                  <property name="text">
+                   <string>Starting alpha:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="sAlphaLine">
+                  <property name="text">
+                   <string>0.30</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_3_2">
+                  <property name="text">
+                   <string>Starting beta:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="sBetaLine">
+                  <property name="text">
+                   <string>0.30</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_2_2_2">
+                  <property name="text">
+                   <string>Starting Initial:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="sInitialLine">
+                  <property name="text">
+                   <string>0.00</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="textLabel2_2_2_2_2_3">
+                  <property name="text">
+                   <string>Starting Final:</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="sFinalLine">
+                  <property name="text">
+                   <string>0.00</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="Q3GroupBox" name="groupBox12">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>10</y>
+            <width>230</width>
+            <height>430</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Corpus or Stress System</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <layout class="QVBoxLayout">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="margin">
+            <number>11</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="textLabel14">
+             <property name="text">
+              <string>Please make sure the final line is blank!</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Q3TextEdit" name="corpusTextEdit">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="wordWrap">
+              <enum>Q3TextEdit::WidgetWidth</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="dcn_syllabification_tab_page">
+         <attribute name="title">
+          <string>DCN Syllabification</string>
+         </attribute>
+         <widget class="QWidget" name="layout22">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>669</width>
+            <height>5641</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="margin">
+            <number>11</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="margin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="Q3GroupBox" name="groupBox4">
+               <property name="title">
+                <string>Parameters</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <layout class="QVBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel1_5">
+                    <property name="text">
+                     <string>Initial Temperature:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="TLineS">
+                    <property name="text">
+                     <string>1.00</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel2">
+                    <property name="text">
+                     <string>Add When Wrong:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="iwwLineS">
+                    <property name="text">
+                     <string>0.02</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel3">
+                    <property name="text">
+                     <string>Multiply by When Correct:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="dwrLineS">
+                    <property name="text">
+                     <string>0.95</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel4">
+                    <property name="text">
+                     <string># of Trials:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="trialsLineS">
+                    <property name="text">
+                     <string>50</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel5">
+                    <property name="text">
+                     <string>Max Steps Per Trial:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="cutoffLineS">
+                    <property name="text">
+                     <string>500</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel6">
+                    <property name="text">
+                     <string>Starting alpha:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="sAlphaLineS">
+                    <property name="text">
+                     <string>-0.30</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout">
+                  <property name="spacing">
+                   <number>6</number>
+                  </property>
+                  <property name="margin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="textLabel7">
+                    <property name="text">
+                     <string>Starting beta:</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="sBetaLineS">
+                    <property name="text">
+                     <string>-0.30</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2">
+               <property name="title">
+                <string>-</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <layout class="QVBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="DCNsylFindTrainButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Find Training Corpus</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="DCNsylFindTestButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Find Testing Corpus</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="DCNsylTrainButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Train Network</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="Q3GroupBox" name="groupBox5">
+               <property name="title">
+                <string>Values Learned</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <layout class="QVBoxLayout">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="margin">
+                 <number>11</number>
+                </property>
+                <item>
+                 <widget class="Q3TextEdit" name="grammarOutputS">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Q3GroupBox" name="groupBox6">
+             <property name="title">
+              <string>Results of Training</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <layout class="QVBoxLayout">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <property name="margin">
+               <number>11</number>
+              </property>
+              <item>
+               <widget class="Q3TextEdit" name="corpusOutputS">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="m_Toolbar">
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="newFileAction"/>
+   <addaction name="rereadCorpusAction"/>
+   <addaction name="openFileAction"/>
+   <addaction name="saveFileAction"/>
+  </widget>
+  <widget class="QMenuBar" name="MainMenuBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1268</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="m_FileMenu">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="newFileAction"/>
+    <addaction name="rereadCorpusAction"/>
+    <addaction name="openFileAction"/>
+    <addaction name="saveFileAction"/>
+    <addaction name="saveAsFileAction"/>
+    <addaction name="saveBrokenCorpusAction"/>
+    <addaction name="exportProjectAction"/>
+    <addaction name="separator"/>
+    <addaction name="preferencesEditAction"/>
+    <addaction name="separator"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="m_EditMenu">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="clearLexiconAction"/>
+   </widget>
+   <widget class="QMenu" name="m_ViewMenu">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="viewToolbarsAction"/>
+    <addaction name="viewStatusBarAction"/>
+    <addaction name="fontsAction"/>
+    <addaction name="viewCorpusAction"/>
+   </widget>
+   <widget class="QMenu" name="m_MiniMenu">
+    <property name="title">
+     <string>&amp;Mini-Lexica</string>
+    </property>
+    <addaction name="newMiniLexiconAction"/>
+    <addaction name="deleteMiniLexiconAction"/>
+    <addaction name="m_autoLayeringAction"/>
+    <addaction name="addWordBoundariesAction"/>
+    <addaction name="separator"/>
+    <addaction name="populateWordsAction"/>
+   </widget>
+   <widget class="QMenu" name="m_SuffixesMenu">
+    <property name="title">
+     <string>&amp;Suffixes</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="runAllAction"/>
+    <addaction name="separator"/>
+    <addaction name="actionBuild_FSA"/>
+    <addaction name="successorFreqAction"/>
+    <addaction name="checkSignaturesAction"/>
+    <addaction name="knownStemsSuffixesAction"/>
+    <addaction name="findSingletonSigsAction"/>
+    <addaction name="m_fromStemsFindAffixesAction"/>
+    <addaction name="m_looseFitAction"/>
+    <addaction name="fromSigsFindStemsAction"/>
+   </widget>
+   <widget class="QMenu" name="m_PrefixesMenu">
+    <property name="title">
+     <string>&amp;Prefixes</string>
+    </property>
+    <addaction name="m_runAllPrefixesAction"/>
+    <addaction name="separator"/>
+    <addaction name="predecessorFreqAction"/>
+    <addaction name="checkPfxSignaturesAction"/>
+    <addaction name="knownStemsPrefixesAction"/>
+    <addaction name="findSingletonPfxSigsAction"/>
+    <addaction name="fromStemsFindAffixesAction"/>
+    <addaction name="pfxLooseFitAction"/>
+    <addaction name="fromPfxSigsFindStemsAction"/>
+   </widget>
+   <widget class="QMenu" name="CompoundsMenu">
+    <property name="title">
+     <string>&amp;Compounds</string>
+    </property>
+    <addaction name="fromStemsFindCompoundsAction"/>
+    <addaction name="fromStemsFindFlatCompoundsAction"/>
+    <addaction name="calculateAffixnessAction"/>
+    <addaction name="fromAffixnessUpdateSigsAndCompoundsAction"/>
+   </widget>
+   <widget class="QMenu" name="m_LogFileMenu">
+    <property name="title">
+     <string>&amp;Log File</string>
+    </property>
+    <addaction name="enableLoggingAction"/>
+    <addaction name="clearLogFileAction"/>
+    <addaction name="newLogFileAction"/>
+   </widget>
+   <widget class="QMenu" name="m_DiagnosticsMenu">
+    <property name="title">
+     <string>&amp;Diagnostics</string>
+    </property>
+    <addaction name="compareGoldStdAction"/>
+    <addaction name="compareCompoundsAction"/>
+    <addaction name="changeGoldStdFileAction"/>
+    <addaction name="separator"/>
+    <addaction name="editCorpusForMTAction"/>
+   </widget>
+   <widget class="QMenu" name="OtherHeuristicsMenu">
+    <property name="title">
+     <string>OtherHeuristics</string>
+    </property>
+    <addaction name="SedAction"/>
+    <addaction name="FindSlices"/>
+    <addaction name="otherheuristicsStandard_DeviationAction"/>
+   </widget>
+   <widget class="QMenu" name="PhonologyMenu">
+    <property name="title">
+     <string>Phonology</string>
+    </property>
+    <widget class="QMenu" name="phonologynew_itemMenu">
+     <property name="title">
+      <string>Create 2nd tier</string>
+     </property>
+     <addaction name="DropTierLeaveSlotAction"/>
+     <addaction name="DropTierLeaveCopyAction"/>
+    </widget>
+    <addaction name="PhonologyAction"/>
+    <addaction name="phonologynew_itemAction"/>
+    <addaction name="phonologynew_itemMenu"/>
+    <addaction name="phonologyCalculateInformationAction"/>
+    <addaction name="Create_skeletonAction"/>
+    <addaction name="phonologyCompute_Gibbs_functionAction"/>
+   </widget>
+   <widget class="QMenu" name="SequencerMenu">
+    <property name="title">
+     <string>Sequencer</string>
+    </property>
+    <addaction name="sequencerReadCorpusAction"/>
+    <addaction name="sequenceASentenceAction"/>
+    <addaction name="sequencerTestAFileAction"/>
+    <addaction name="mTModel1Action"/>
+   </widget>
+   <widget class="QMenu" name="HMMMenu">
+    <property name="title">
+     <string>HMM</string>
+    </property>
+    <addaction name="testSEMHMMAction"/>
+   </widget>
+   <widget class="QMenu" name="AllomorphyMenu">
+    <property name="title">
+     <string>Allomorphy</string>
+    </property>
+    <addaction name="allomorphy2002_Action"/>
+   </widget>
+   <addaction name="m_FileMenu"/>
+   <addaction name="m_EditMenu"/>
+   <addaction name="m_ViewMenu"/>
+   <addaction name="m_MiniMenu"/>
+   <addaction name="m_SuffixesMenu"/>
+   <addaction name="m_PrefixesMenu"/>
+   <addaction name="CompoundsMenu"/>
+   <addaction name="m_LogFileMenu"/>
+   <addaction name="m_DiagnosticsMenu"/>
+   <addaction name="OtherHeuristicsMenu"/>
+   <addaction name="PhonologyMenu"/>
+   <addaction name="SequencerMenu"/>
+   <addaction name="HMMMenu"/>
+   <addaction name="AllomorphyMenu"/>
+  </widget>
+  <action name="openFileAction">
+   <property name="icon">
+    <iconset resource="images/linguistica.qrc">
+     <normaloff>:/icons/open.xpm</normaloff>:/icons/open.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open project</string>
+   </property>
+   <property name="iconText">
+    <string>Open project</string>
+   </property>
+   <property name="toolTip">
+    <string>Open an existing project.</string>
+   </property>
+   <property name="statusTip">
+    <string>Open an existing project.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="iconText">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit.</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="runAllAction">
+   <property name="text">
+    <string>&amp;Run all</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Run all</string>
+   </property>
+   <property name="toolTip">
+    <string>Run all suffix functions.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="enableLoggingAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Logging Enabled</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Logging Enabled</string>
+   </property>
+   <property name="toolTip">
+    <string>Toggle logging.</string>
+   </property>
+  </action>
+  <action name="clearLogFileAction">
+   <property name="text">
+    <string>&amp;Clear Log File</string>
+   </property>
+   <property name="iconText">
+    <string>Clear Log File</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear the log file.</string>
+   </property>
+  </action>
+  <action name="newLogFileAction">
+   <property name="text">
+    <string>&amp;New Log File</string>
+   </property>
+   <property name="iconText">
+    <string>New Log File</string>
+   </property>
+   <property name="toolTip">
+    <string>Change the log file.</string>
+   </property>
+  </action>
+  <action name="fontsAction">
+   <property name="text">
+    <string>&amp;Fonts</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Fonts</string>
+   </property>
+   <property name="toolTip">
+    <string>Change the screen font.</string>
+   </property>
+  </action>
+  <action name="preferencesEditAction">
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+   <property name="iconText">
+    <string>Preferences</string>
+   </property>
+   <property name="toolTip">
+    <string>Change the user preferences.</string>
+   </property>
+  </action>
+  <action name="saveFileAction">
+   <property name="icon">
+    <iconset resource="images/linguistica.qrc">
+     <normaloff>:/icons/save.xpm</normaloff>:/icons/save.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save project</string>
+   </property>
+   <property name="iconText">
+    <string>Save project</string>
+   </property>
+   <property name="toolTip">
+    <string>Save the current project.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+S</string>
+   </property>
+  </action>
+  <action name="saveAsFileAction">
+   <property name="text">
+    <string>Save &amp;As...</string>
+   </property>
+   <property name="iconText">
+    <string>Save As...</string>
+   </property>
+   <property name="toolTip">
+    <string>Save as a different project.</string>
+   </property>
+  </action>
+  <action name="newFileAction">
+   <property name="icon">
+    <iconset resource="images/linguistica.qrc">
+     <normaloff>:/icons/new.xpm</normaloff>:/icons/new.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New corpus</string>
+   </property>
+   <property name="iconText">
+    <string>New corpus</string>
+   </property>
+   <property name="toolTip">
+    <string>Read in a new corpus.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="m_showDeleteesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Show complex signatures</string>
+   </property>
+   <property name="iconText">
+    <string>Show complex signatures</string>
+   </property>
+  </action>
+  <action name="rereadCorpusAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images/linguistica.qrc">
+     <normaloff>:/icons/reload.xpm</normaloff>:/icons/reload.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Reread corpus</string>
+   </property>
+   <property name="iconText">
+    <string>Reread corpus</string>
+   </property>
+   <property name="toolTip">
+    <string>Reread the current corpus.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="clearLexiconAction">
+   <property name="text">
+    <string>&amp;Clear lexicon</string>
+   </property>
+   <property name="iconText">
+    <string>Clear lexicon</string>
+   </property>
+  </action>
+  <action name="successorFreqAction">
+   <property name="text">
+    <string>&amp;Successor frequencies</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Successor frequencies</string>
+   </property>
+  </action>
+  <action name="checkSignaturesAction">
+   <property name="text">
+    <string>&amp;Check signatures</string>
+   </property>
+   <property name="iconText">
+    <string>Check signatures</string>
+   </property>
+  </action>
+  <action name="knownStemsSuffixesAction">
+   <property name="text">
+    <string>&amp;Known stems and suffixes</string>
+   </property>
+   <property name="iconText">
+    <string>Known stems and suffixes</string>
+   </property>
+  </action>
+  <action name="fromSigsFindStemsAction">
+   <property name="text">
+    <string>F&amp;rom sigs: find stems</string>
+   </property>
+   <property name="iconText">
+    <string>From sigs: find stems</string>
+   </property>
+  </action>
+  <action name="findSingletonSigsAction">
+   <property name="text">
+    <string>&amp;Find singleton signatures</string>
+   </property>
+   <property name="iconText">
+    <string>Find singleton signatures</string>
+   </property>
+  </action>
+  <action name="viewToolbarsAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Toolbars</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Toolbars</string>
+   </property>
+  </action>
+  <action name="viewStatusBarAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Status bar</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Status bar</string>
+   </property>
+  </action>
+  <action name="saveBrokenCorpusAction">
+   <property name="text">
+    <string>Save &amp;broken corpus</string>
+   </property>
+   <property name="iconText">
+    <string>Save &amp;broken corpus</string>
+   </property>
+  </action>
+  <action name="newMiniLexiconAction">
+   <property name="text">
+    <string>&amp;New mini-lexicon</string>
+   </property>
+   <property name="iconText">
+    <string>New mini-lexicon</string>
+   </property>
+  </action>
+  <action name="deleteMiniLexiconAction">
+   <property name="text">
+    <string>&amp;Delete mini-lexicon</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Delete mini-lexicon</string>
+   </property>
+  </action>
+  <action name="m_autoLayeringAction">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Auto &amp;layering</string>
+   </property>
+   <property name="iconText">
+    <string>Auto layering</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="m_looseFitAction">
+   <property name="text">
+    <string>&amp;Loose fit</string>
+   </property>
+   <property name="iconText">
+    <string>Loose fit</string>
+   </property>
+  </action>
+  <action name="populateWordsAction">
+   <property name="text">
+    <string>&amp;Populate word collection</string>
+   </property>
+   <property name="iconText">
+    <string>Populate word collection</string>
+   </property>
+  </action>
+  <action name="compareGoldStdAction">
+   <property name="text">
+    <string>Compare &amp;gold standard</string>
+   </property>
+   <property name="iconText">
+    <string>Compare gold standard</string>
+   </property>
+  </action>
+  <action name="changeGoldStdFileAction">
+   <property name="text">
+    <string>&amp;New gold standard file</string>
+   </property>
+   <property name="iconText">
+    <string>New gold standard file</string>
+   </property>
+  </action>
+  <action name="m_runAllPrefixesAction">
+   <property name="text">
+    <string>&amp;Run all</string>
+   </property>
+   <property name="iconText">
+    <string>Run all</string>
+   </property>
+   <property name="toolTip">
+    <string>Run all</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="predecessorFreqAction">
+   <property name="text">
+    <string>&amp;Predecessor Frequencies</string>
+   </property>
+   <property name="iconText">
+    <string>Predecessor Frequencies</string>
+   </property>
+  </action>
+  <action name="knownStemsPrefixesAction">
+   <property name="text">
+    <string>&amp;Known stems and prefixes</string>
+   </property>
+   <property name="iconText">
+    <string>Known stems and prefixes</string>
+   </property>
+  </action>
+  <action name="checkPfxSignaturesAction">
+   <property name="text">
+    <string>Check signatures</string>
+   </property>
+   <property name="iconText">
+    <string>Check signatures</string>
+   </property>
+  </action>
+  <action name="findSingletonPfxSigsAction">
+   <property name="text">
+    <string>Find singleton signatures</string>
+   </property>
+   <property name="iconText">
+    <string>Find singleton signatures</string>
+   </property>
+  </action>
+  <action name="pfxLooseFitAction">
+   <property name="text">
+    <string>Loose fit</string>
+   </property>
+   <property name="iconText">
+    <string>Loose fit</string>
+   </property>
+  </action>
+  <action name="fromPfxSigsFindStemsAction">
+   <property name="text">
+    <string>From sigs: find stems</string>
+   </property>
+   <property name="iconText">
+    <string>From sigs: find stems</string>
+   </property>
+  </action>
+  <action name="fsaTestFunctionAction">
+   <property name="text">
+    <string>TestFunction</string>
+   </property>
+   <property name="iconText">
+    <string>TestFunction</string>
+   </property>
+  </action>
+  <action name="SedAction">
+   <property name="text">
+    <string>StringEditDistance</string>
+   </property>
+   <property name="iconText">
+    <string>StringEditDistance</string>
+   </property>
+  </action>
+  <action name="FindSlices">
+   <property name="text">
+    <string>Find Slices</string>
+   </property>
+   <property name="iconText">
+    <string>Find Slices</string>
+   </property>
+  </action>
+  <action name="createLexiconAction">
+   <property name="text">
+    <string>Create lexicon...</string>
+   </property>
+   <property name="iconText">
+    <string>Create lexicon...</string>
+   </property>
+  </action>
+  <action name="addWordBoundariesAction">
+   <property name="text">
+    <string>Add Word Boundaries</string>
+   </property>
+   <property name="iconText">
+    <string>Add Word Boundaries</string>
+   </property>
+  </action>
+  <action name="editCorpusForMTAction">
+   <property name="iconText">
+    <string>EditCorpusForMT</string>
+   </property>
+  </action>
+  <action name="PhonologyAction">
+   <property name="text">
+    <string>&amp;Phonology</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Phonology</string>
+   </property>
+  </action>
+  <action name="phonologynew_itemAction">
+   <property name="iconText">
+    <string>Create 2nd tier</string>
+   </property>
+  </action>
+  <action name="Create_skeletonAction">
+   <property name="iconText">
+    <string>Create CV template</string>
+   </property>
+  </action>
+  <action name="m_fromStemsFindAffixesAction">
+   <property name="iconText">
+    <string>Fr&amp;om stems: find affixes</string>
+   </property>
+  </action>
+  <action name="fromStemsFindAffixesAction">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="iconText">
+    <string>Fr&amp;om stems: find affixes</string>
+   </property>
+  </action>
+  <action name="DropTierLeaveSlotAction">
+   <property name="iconText">
+    <string>Leave slot</string>
+   </property>
+  </action>
+  <action name="phonologyCalculateInformationAction">
+   <property name="iconText">
+    <string>Calculate information</string>
+   </property>
+  </action>
+  <action name="DropTierLeaveCopyAction">
+   <property name="iconText">
+    <string>Leave copy</string>
+   </property>
+  </action>
+  <action name="phonologyCompute_Gibbs_functionAction">
+   <property name="iconText">
+    <string>Compute Gibbs function</string>
+   </property>
+  </action>
+  <action name="sequencerReadCorpusAction">
+   <property name="iconText">
+    <string>ReadCorpus</string>
+   </property>
+  </action>
+  <action name="sequenceASentenceAction">
+   <property name="iconText">
+    <string>ASentence</string>
+   </property>
+  </action>
+  <action name="sequencerTestAFileAction">
+   <property name="iconText">
+    <string>TestAFile</string>
+   </property>
+  </action>
+  <action name="statsReadCorpusAction">
+   <property name="iconText">
+    <string>ReadCorpus</string>
+   </property>
+  </action>
+  <action name="otherheuristicsStandard_DeviationAction">
+   <property name="iconText">
+    <string>Standard Deviation</string>
+   </property>
+  </action>
+  <action name="otherheuristicsDCN_stressAction">
+   <property name="iconText">
+    <string>DCN stress</string>
+   </property>
+  </action>
+  <action name="otherheuristicsDCN_syllabificationAction">
+   <property name="iconText">
+    <string>DCN syllabification</string>
+   </property>
+  </action>
+  <action name="fromStemsFindCompoundsAction">
+   <property name="text">
+    <string>From &amp;stems find compounds</string>
+   </property>
+   <property name="iconText">
+    <string>From stems find compounds</string>
+   </property>
+  </action>
+  <action name="compareCompoundsAction">
+   <property name="iconText">
+    <string>Compare compounds</string>
+   </property>
+  </action>
+  <action name="calculateAffixnessAction">
+   <property name="iconText">
+    <string>&amp;Calculate affixness of components</string>
+   </property>
+  </action>
+  <action name="fromAffixnessUpdateSigsAndCompoundsAction">
+   <property name="iconText">
+    <string>From &amp;affixness update sigs and compounds</string>
+   </property>
+  </action>
+  <action name="mTModel1Action">
+   <property name="iconText">
+    <string>Model1</string>
+   </property>
+  </action>
+  <action name="testSEMHMMAction">
+   <property name="iconText">
+    <string>TestStateEMHMM</string>
+   </property>
+  </action>
+  <action name="viewCorpusAction">
+   <property name="iconText">
+    <string>Corpus</string>
+   </property>
+  </action>
+  <action name="exportProjectAction">
+   <property name="iconText">
+    <string>&amp;Export project</string>
+   </property>
+  </action>
+  <action name="fromStemsFindFlatCompoundsAction">
+   <property name="text">
+    <string>From stems find &amp;flat compounds</string>
+   </property>
+   <property name="iconText">
+    <string>From stems find flat compounds</string>
+   </property>
+  </action>
+  <action name="wordbreakernew_itemAction">
+   <property name="iconText">
+    <string>new item</string>
+   </property>
+  </action>
+  <action name="allomorphy2002_Action">
+   <property name="iconText">
+    <string>2002 </string>
+   </property>
+  </action>
+  <action name="findAllomorphyAction">
+   <property name="text">
+    <string>&amp;Find allomorphy</string>
+   </property>
+   <property name="iconText">
+    <string>Find allomorphy</string>
+   </property>
+   <property name="toolTip">
+    <string>Find allomorphy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionOpenLogFile">
+   <property name="text">
+    <string>OpenLogFile</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionBuild_FSA">
+   <property name="text">
+    <string>Build FSA</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3Frame</class>
+   <extends>QFrame</extends>
+   <header>Qt3Support/Q3Frame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3ButtonGroup</class>
+   <extends>Q3GroupBox</extends>
+   <header>Qt3Support/Q3ButtonGroup</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3ListView</class>
+   <extends>Q3Frame</extends>
+   <header>q3listview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Q3TextEdit</class>
+   <extends>Q3Frame</extends>
+   <header>q3textedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="images/linguistica.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>calculateAffixnessAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>calculateAffixnessSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkPfxSignaturesAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>checkPfxSignaturesSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkSignaturesAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>checkSignaturesSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearLexiconAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>clearLexiconSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearLogFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>clearLogFileActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>compareCompoundsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>compareCompoundsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>compareGoldStdAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>compareGoldStdSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DCNstressComputeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DCNstressComputeSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DCNstressLearnButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DCNstressLearnSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DCNsylFindTestButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DCNsylFindTestSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DCNsylFindTrainButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DCNsylFindTrainSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DCNsylTrainButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DCNsylTrainSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deleteMiniLexiconAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>deleteMiniLexiconActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DropTierLeaveCopyAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DropTierLeaveCopy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editCorpusForMTAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>editCorpusForMT()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enableLoggingAction</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>enableLoggingActionSlot(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exitAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exportProjectAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>exportProjectSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findAllomorphyAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>findAllomorphySlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findSingletonPfxSigsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>findPfxSingletonSigsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findSingletonSigsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>findSingletonSigsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fontsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>changeFontSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fromAffixnessUpdateSigsAndCompoundsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>fromAffixnessUpdateSigsAndCompoundsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fromPfxSigsFindStemsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>fromPfxSigsFindStemsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fromSigsFindStemsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>fromSigsFindStemsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fromStemsFindCompoundsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>fromStemsFindCompoundsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fromStemsFindFlatCompoundsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>fromStemsFindFlatCompoundsSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fsaTestFunctionAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>fsaTestFuncAction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>knownStemsPrefixesAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>knownStemsPrefixesSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>knownStemsSuffixesAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>knownStemsSuffixesSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_collectionView</sender>
+   <signal>selectionChanged(Q3ListViewItem*)</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>updateCommandLineSlot(Q3ListViewItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_fromStemsFindAffixesAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>fromStemsFindAffixesSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_looseFitAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>looseFitSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_runAllPrefixesAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>runAllPrefixActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_showDeleteesAction</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>showDeleteesSlot(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_treeView</sender>
+   <signal>selectionChanged(Q3ListViewItem*)</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>updateCollectionViewSlot(Q3ListViewItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_treeView</sender>
+   <signal>clicked(Q3ListViewItem*)</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>updateCollectionViewSlot(Q3ListViewItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mTModel1Action</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>mTModel1Slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>newFileActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newLogFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>newLogFileActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newMiniLexiconAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>newMiniLexiconActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>openFileActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>otherheuristicsDCN_stressAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DCNstressSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>otherheuristicsDCN_syllabificationAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>DCNsylSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>otherheuristicsStandard_DeviationAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>statsReadCorpusSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pfxLooseFitAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>pfxLooseFitSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PhonologyAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>GenericPhonologySlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>phonologyCompute_Gibbs_functionAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>PhonologyComputeGibbsFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>populateWordsAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>populateWordsActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>predecessorFreqAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>predecessorFreqSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>preferencesEditAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>preferencesEditSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rereadCorpusAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>rereadCorpusSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>runAllAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>runAllSuffixActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveAsFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>saveAsFileActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveBrokenCorpusAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>saveBrokenCorpusSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>saveFileActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SedAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>RunSedSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FindSlices</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>FindSlicesSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sequenceASentenceAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>sequenceASentenceSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sequencerReadCorpusAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>sequencerReadCorpusSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sequencerTestAFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>sequencerTestAFileSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>statsReadCorpusAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>statsReadCorpusSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>successorFreqAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>successorFreqSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>changeGoldStdFileAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>changeGoldStdFileSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>testSEMHMMAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>testSEMHMMSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>viewCorpusAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>viewCorpusSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>viewStatusBarAction</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>showStatusBarSlot(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>viewToolbarsAction</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>showToolbarsSlot(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_autoLayeringAction</sender>
+   <signal>activated()</signal>
+   <receiver>LinguisticaMainWindowBase</receiver>
+   <slot>autoLayeringActionSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

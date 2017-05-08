@@ -1,0 +1,4983 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>ExportWizardBase</class>
+  <widget class="Q3Wizard" name="ExportWizardBase" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>600</width>
+        <height>532</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Linguistica Export Wizard</string>
+    </property>
+    <widget class="QWidget" name="project_info" >
+      <attribute name="title" >
+        <string>Project Information</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <widget class="Q3GroupBox" name="groupBox1" >
+            <property name="title" >
+              <string>Project Information</string>
+            </property>
+            <layout class="QGridLayout" >
+              <item row="1" column="1" >
+                <widget class="QLineEdit" name="m_language" />
+              </item>
+              <item row="2" column="0" >
+                <widget class="QLabel" name="textLabel4" >
+                  <property name="text" >
+                    <string>Researcher(s):</string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+              <item row="2" column="1" >
+                <widget class="QLineEdit" name="m_researchers" />
+              </item>
+              <item row="1" column="0" >
+                <widget class="QLabel" name="textLabel3" >
+                  <property name="text" >
+                    <string>Language:</string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+              <item row="0" column="0" >
+                <widget class="QLabel" name="textLabel2" >
+                  <property name="text" >
+                    <string>&lt;p align="left">Project&amp;nbsp;Name:&lt;/p></string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+              <item row="0" column="1" >
+                <widget class="QLineEdit" name="m_projectName" />
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox2" >
+            <property name="title" >
+              <string>Outputs</string>
+            </property>
+            <layout class="QGridLayout" >
+              <item row="1" column="0" >
+                <widget class="QCheckBox" name="m_brokenCorpusFlag" >
+                  <property name="text" >
+                    <string>Broken Corpus</string>
+                  </property>
+                </widget>
+              </item>
+              <item rowspan="1" row="6" column="2" colspan="2" >
+                <widget class="QCheckBox" name="m_miniSignaturesFlag" >
+                  <property name="text" >
+                    <string>Signatures</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="6" column="1" >
+                <widget class="QCheckBox" name="m_miniSuffixesFlag" >
+                  <property name="text" >
+                    <string>Suffixes</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="6" column="0" >
+                <widget class="QCheckBox" name="m_miniWordsFlag" >
+                  <property name="text" >
+                    <string>Words</string>
+                  </property>
+                </widget>
+              </item>
+              <item rowspan="1" row="5" column="0" colspan="2" >
+                <widget class="QLabel" name="textLabel5" >
+                  <property name="text" >
+                    <string>Mini-Lexica:</string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+              <item rowspan="1" row="7" column="1" colspan="2" >
+                <widget class="QCheckBox" name="m_miniPrefixesFlag" >
+                  <property name="text" >
+                    <string>Prefixes</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="7" column="0" >
+                <widget class="QCheckBox" name="m_miniStemsFlag" >
+                  <property name="text" >
+                    <string>Stems</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="3" column="2" >
+                <widget class="QCheckBox" name="m_allSuffixSigsFlag" >
+                  <property name="text" >
+                    <string>All Suffix Signatures</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="4" column="1" >
+                <widget class="QCheckBox" name="m_allPrefixesFlag" >
+                  <property name="text" >
+                    <string>All Prefixes</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="4" column="2" >
+                <widget class="QCheckBox" name="m_allPrefixSigsFlag" >
+                  <property name="text" >
+                    <string>All Prefix Signatures</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="3" column="1" >
+                <widget class="QCheckBox" name="m_allSuffixesFlag" >
+                  <property name="text" >
+                    <string>All Suffixes</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="3" column="0" >
+                <widget class="QCheckBox" name="m_allWordsFlag" >
+                  <property name="text" >
+                    <string>All Words</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="3" column="3" >
+                <widget class="QCheckBox" name="m_compoundsFlag" >
+                  <property name="enabled" >
+                    <bool>true</bool>
+                  </property>
+                  <property name="text" >
+                    <string>Compounds</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="4" column="0" >
+                <widget class="QCheckBox" name="m_allStemsFlag" >
+                  <property name="text" >
+                    <string>All Stems</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="1" column="1" >
+                <widget class="QCheckBox" name="m_corpusWordsFlag" >
+                  <property name="text" >
+                    <string>Corpus Words</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="2" column="0" >
+                <widget class="QLabel" name="textLabel6" >
+                  <property name="text" >
+                    <string>Lexicon:</string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+              <item row="0" column="0" >
+                <widget class="QLabel" name="textLabel1_2" >
+                  <property name="text" >
+                    <string>Corpus:</string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup1" >
+            <property name="title" >
+              <string>Output Type</string>
+            </property>
+            <layout class="QHBoxLayout" >
+              <item>
+                <widget class="QRadioButton" name="m_simpleTextFlag" >
+                  <property name="text" >
+                    <string>Simple Text (*.txt)</string>
+                  </property>
+                  <property name="checked" >
+                    <bool>true</bool>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QRadioButton" name="m_markUpFlag" >
+                  <property name="text" >
+                    <string>Mark-Up (*.html)</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QRadioButton" name="m_bothFlag" >
+                  <property name="maximumSize" >
+                    <size>
+                      <width>75</width>
+                      <height>32767</height>
+                    </size>
+                  </property>
+                  <property name="text" >
+                    <string>Both</string>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox3" >
+            <property name="title" >
+              <string>Output Directory</string>
+            </property>
+            <layout class="QHBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_outputDirectory" >
+                  <property name="minimumSize" >
+                    <size>
+                      <width>300</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="readOnly" >
+                    <bool>true</bool>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="m_outputDirBrowseButton" >
+                  <property name="text" >
+                    <string>Browse...</string>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="style_sheet" >
+      <attribute name="title" >
+        <string>Text Styles</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3GroupBox" name="groupBox29" >
+                <property name="title" >
+                  <string>Word Style</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QLabel" name="textLabel6_2" >
+                          <property name="text" >
+                            <string>Example:</string>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="m_wordStyle" >
+                          <property name="minimumSize" >
+                            <size>
+                              <width>0</width>
+                              <height>30</height>
+                            </size>
+                          </property>
+                          <property name="frameShape" >
+                            <enum>QFrame::Box</enum>
+                          </property>
+                          <property name="text" >
+                            <string>word</string>
+                          </property>
+                          <property name="alignment" >
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QCheckBox" name="m_wordBoldFlag" >
+                          <property name="text" >
+                            <string>Bold</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QCheckBox" name="m_wordItalicFlag" >
+                          <property name="text" >
+                            <string>Italic</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="m_wordColorButton" >
+                          <property name="text" >
+                            <string>Change Color</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3GroupBox" name="groupBox29_5" >
+                <property name="title" >
+                  <string>Stem Style</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QLabel" name="textLabel6_2_5" >
+                          <property name="text" >
+                            <string>Example:</string>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="m_stemStyle" >
+                          <property name="minimumSize" >
+                            <size>
+                              <width>0</width>
+                              <height>30</height>
+                            </size>
+                          </property>
+                          <property name="frameShape" >
+                            <enum>QFrame::Box</enum>
+                          </property>
+                          <property name="text" >
+                            <string>stem</string>
+                          </property>
+                          <property name="alignment" >
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QCheckBox" name="m_stemBoldFlag" >
+                          <property name="text" >
+                            <string>Bold</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QCheckBox" name="m_stemItalicFlag" >
+                          <property name="text" >
+                            <string>Italic</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="m_stemColorButton" >
+                          <property name="text" >
+                            <string>Change Color</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer37" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>130</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3GroupBox" name="groupBox29_3" >
+                <property name="title" >
+                  <string>Suffix Style</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QLabel" name="textLabel6_2_3" >
+                          <property name="text" >
+                            <string>Example:</string>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="m_suffixStyle" >
+                          <property name="minimumSize" >
+                            <size>
+                              <width>0</width>
+                              <height>30</height>
+                            </size>
+                          </property>
+                          <property name="frameShape" >
+                            <enum>QFrame::Box</enum>
+                          </property>
+                          <property name="text" >
+                            <string>ing</string>
+                          </property>
+                          <property name="alignment" >
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QCheckBox" name="m_suffixBoldFlag" >
+                          <property name="text" >
+                            <string>Bold</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QCheckBox" name="m_suffixItalicFlag" >
+                          <property name="text" >
+                            <string>Italic</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="m_suffixColorButton" >
+                          <property name="text" >
+                            <string>Change Color</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3GroupBox" name="groupBox29_4" >
+                <property name="title" >
+                  <string>Prefix Style</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QLabel" name="textLabel6_2_4" >
+                          <property name="text" >
+                            <string>Example:</string>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="m_prefixStyle" >
+                          <property name="minimumSize" >
+                            <size>
+                              <width>0</width>
+                              <height>30</height>
+                            </size>
+                          </property>
+                          <property name="frameShape" >
+                            <enum>QFrame::Box</enum>
+                          </property>
+                          <property name="text" >
+                            <string>pre</string>
+                          </property>
+                          <property name="alignment" >
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QCheckBox" name="m_prefixBoldFlag" >
+                          <property name="text" >
+                            <string>Bold</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QCheckBox" name="m_prefixItalicFlag" >
+                          <property name="text" >
+                            <string>Italic</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="m_prefixColorButton" >
+                          <property name="text" >
+                            <string>Change Color</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer36" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3GroupBox" name="groupBox29_2" >
+                <property name="title" >
+                  <string>Signature Style</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QLabel" name="textLabel6_2_2" >
+                          <property name="text" >
+                            <string>Example:</string>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="m_signatureStyle" >
+                          <property name="minimumSize" >
+                            <size>
+                              <width>0</width>
+                              <height>30</height>
+                            </size>
+                          </property>
+                          <property name="frameShape" >
+                            <enum>QFrame::Box</enum>
+                          </property>
+                          <property name="text" >
+                            <string>NULL.ed.ing.s</string>
+                          </property>
+                          <property name="alignment" >
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QCheckBox" name="m_signatureBoldFlag" >
+                          <property name="text" >
+                            <string>Bold</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QCheckBox" name="m_signatureItalicFlag" >
+                          <property name="text" >
+                            <string>Italic</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="m_signatureColorButton" >
+                          <property name="text" >
+                            <string>Change Color</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3GroupBox" name="groupBox29_6" >
+                <property name="title" >
+                  <string>Compound Style</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QLabel" name="textLabel6_2_6" >
+                          <property name="text" >
+                            <string>Example:</string>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="m_compoundStyle" >
+                          <property name="minimumSize" >
+                            <size>
+                              <width>0</width>
+                              <height>30</height>
+                            </size>
+                          </property>
+                          <property name="frameShape" >
+                            <enum>QFrame::Box</enum>
+                          </property>
+                          <property name="text" >
+                            <string>compound</string>
+                          </property>
+                          <property name="alignment" >
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="wordWrap" >
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QCheckBox" name="m_compoundBoldFlag" >
+                          <property name="text" >
+                            <string>Bold</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QCheckBox" name="m_compoundItalicFlag" >
+                          <property name="text" >
+                            <string>Italic</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="m_compoundColorButton" >
+                          <property name="text" >
+                            <string>Change Color</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer35" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>100</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <spacer name="spacer14" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="corpus_word_file_layout" >
+      <attribute name="title" >
+        <string>Corpus Words File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_corpusWordsAnalyzedOnlyFlag" >
+                      <property name="text" >
+                        <string>Analyzed words only</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_corpusWordsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_corpusWordsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2" >
+                <property name="title" >
+                  <string>Corpus Word Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_corpusWordsAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_corpusWordsCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_corpusWordsMorphemeCountSortFlag" >
+                      <property name="text" >
+                        <string>Morpheme count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_corpusWordsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_corpusWordsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_corpusWordsAddWordButton" >
+                      <property name="text" >
+                        <string>Word</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_corpusWordsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_corpusWordsAddMorphCountButton" >
+                      <property name="text" >
+                        <string>Morph Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_corpusWordsAddMorphsButton" >
+                      <property name="text" >
+                        <string>Morphs</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer18" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3GroupBox" name="groupBox17" >
+                <property name="title" >
+                  <string>Morphs Field Delimiter (%MORPHS%)</string>
+                </property>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QLabel" name="textLabel3_2" >
+                      <property name="text" >
+                        <string>&lt;p align="center">morpheme&amp;nbsp;&lt;tt>i&lt;/tt>&lt;/p></string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QLineEdit" name="m_corpusWordsMorphemeFieldDelimiter" >
+                      <property name="maximumSize" >
+                        <size>
+                          <width>50</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="text" >
+                        <string>.</string>
+                      </property>
+                      <property name="alignment" >
+                        <set>Qt::AlignHCenter</set>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QLabel" name="textLabel4_2" >
+                      <property name="text" >
+                        <string>&lt;p align="center">morpheme&amp;nbsp;&lt;tt>j&lt;/tt>&lt;/p></string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer19" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_corpusWordsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer12" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="compounds_file_layout_page" >
+      <attribute name="title" >
+        <string>Compounds File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_3" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_compoundsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_compoundsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2_3" >
+                <property name="title" >
+                  <string>Compound Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_compoundsAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_compoundsCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_compoundsMorphemeCountSortFlag" >
+                      <property name="text" >
+                        <string>Morpheme count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_4" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_3" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_compoundsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddWordButton" >
+                      <property name="text" >
+                        <string>Compound</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddMorphCountButton" >
+                      <property name="text" >
+                        <string>Morph Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer18_3" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>102</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddMorphsButton" >
+                      <property name="text" >
+                        <string>Morphs</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddSuffixnessButton" >
+                      <property name="text" >
+                        <string>Suffixness</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddPrefixnessButton" >
+                      <property name="text" >
+                        <string>Prefixness</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_compoundsAddParseButton" >
+                      <property name="text" >
+                        <string>Parse</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer53" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>180</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3GroupBox" name="groupBox17_2" >
+                <property name="title" >
+                  <string>Morphs Field Delimiter (%MORPHS%)</string>
+                </property>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QLabel" name="textLabel3_2_2" >
+                      <property name="text" >
+                        <string>&lt;p align="center">morpheme&amp;nbsp;&lt;tt>i&lt;/tt>&lt;/p></string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QLineEdit" name="m_compoundsMorphemeFieldDelimiter" >
+                      <property name="maximumSize" >
+                        <size>
+                          <width>50</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="text" >
+                        <string>.</string>
+                      </property>
+                      <property name="alignment" >
+                        <set>Qt::AlignHCenter</set>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QLabel" name="textLabel4_2_2" >
+                      <property name="text" >
+                        <string>&lt;p align="center">morpheme&amp;nbsp;&lt;tt>j&lt;/tt>&lt;/p></string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer19_3" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_3" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_compoundsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer12_2" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>96</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="linkers_file_layout_page" >
+      <attribute name="title" >
+        <string>Linkers File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2_3_3_3" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_linkersColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_linkersUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_linkersIncludeCompoundListFlag" >
+                      <property name="text" >
+                        <string>Include compound list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2_2_3_2_3" >
+                <property name="title" >
+                  <string>Linker Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_linkersAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_linkersCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2_3_3_3" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>260</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2_3_3_3" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_linkersLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_linkersAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_linkersAddLinkerButton" >
+                      <property name="text" >
+                        <string>Linker</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_linkersAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_linkersAddCompoundCountButton" >
+                      <property name="text" >
+                        <string>Compound Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16_3_3_3" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>20</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2_3_3_3" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_linkersExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2_3_3_3" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>186</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="all_words_file_layout_page" >
+      <attribute name="title" >
+        <string>All Words File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_allWordsAnalyzedOnlyFlag" >
+                      <property name="text" >
+                        <string>Analyzed words only</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allWordsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allWordsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_allWordsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddWordButton" >
+                      <property name="text" >
+                        <string>Word</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddMiniLexButton" >
+                      <property name="text" >
+                        <string>Mini-Lexicon</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddTypeButton" >
+                      <property name="text" >
+                        <string>Type</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer18_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddSignatureButton" >
+                      <property name="text" >
+                        <string>Signature</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddSourceButton" >
+                      <property name="text" >
+                        <string>Source</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddPrefixButton" >
+                      <property name="text" >
+                        <string>Prefix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddStemButton" >
+                      <property name="text" >
+                        <string>Stem</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allWordsAddSuffixButton" >
+                      <property name="text" >
+                        <string>Suffix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer19_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_allWordsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="all_stems_file_layout_page" >
+      <attribute name="title" >
+        <string>All Stems File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_allStemsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allStemsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_allStemsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddStemButton" >
+                      <property name="text" >
+                        <string>Stem</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddMiniLexButton" >
+                      <property name="text" >
+                        <string>Mini-Lexicon</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer20_3" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>102</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddSignatureButton" >
+                      <property name="text" >
+                        <string>Signature</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddOriginButton" >
+                      <property name="text" >
+                        <string>Origin</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allStemsAddTypeButton" >
+                      <property name="text" >
+                        <string>Type</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer21" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>170</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_allStemsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>105</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="all_suffixes_file_layout_page" >
+      <attribute name="title" >
+        <string>All Suffixes File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2_3" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_allSuffixesColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allSuffixesUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allSuffixesIncludeStemListFlag" >
+                      <property name="text" >
+                        <string>Include stem list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2_3" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2_3" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_allSuffixesLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixesAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixesAddSuffixButton" >
+                      <property name="text" >
+                        <string>Suffix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixesAddMiniLexButton" >
+                      <property name="text" >
+                        <string>Mini-Lexicon</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixesAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixesAddStemCountButton" >
+                      <property name="text" >
+                        <string>Stem Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixesAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16_3" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>20</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2_3" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_allSuffixesExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2_3" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>115</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="all_suffix_signatures_file_layout_page" >
+      <attribute name="title" >
+        <string>All Suffix Signatures File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_allSuffixSigsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allSuffixSigsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allSuffixSigsIncludeStemListFlag" >
+                      <property name="text" >
+                        <string>Include stem list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_allSuffixSigsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddSigButton" >
+                      <property name="text" >
+                        <string>Signature</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddMiniLexButton" >
+                      <property name="text" >
+                        <string>Mini-Lexicon</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddStemCountButton" >
+                      <property name="text" >
+                        <string>Stem Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddRobustnessButton" >
+                      <property name="text" >
+                        <string>Robustness</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddExemplarButton" >
+                      <property name="text" >
+                        <string>Exemplar</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allSuffixSigsAddRemarksButton" >
+                      <property name="text" >
+                        <string>Remarks</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer17" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_allSuffixSigsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>130</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="all_prefixes_file_layout_page" >
+      <attribute name="title" >
+        <string>All Prefixes File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2_3_2" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_allPrefixesColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allPrefixesUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allPrefixesIncludeStemListFlag" >
+                      <property name="text" >
+                        <string>Include stem list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2_3_2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2_3_2" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_allPrefixesLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixesAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixesAddPrefixButton" >
+                      <property name="text" >
+                        <string>Prefix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixesAddMiniLexButton" >
+                      <property name="text" >
+                        <string>Mini-Lexicon</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixesAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixesAddStemCountButton" >
+                      <property name="text" >
+                        <string>Stem Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixesAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16_3_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>20</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2_3_2" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_allPrefixesExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2_3_2" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>148</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="all_prefix_signatures_file_layout_page" >
+      <attribute name="title" >
+        <string>All Prefix Signatures File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2_2" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_allPrefixSigsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allPrefixSigsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_allPrefixSigsIncludeStemListFlag" >
+                      <property name="text" >
+                        <string>Include stem list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2_2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>40</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2_2" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_allPrefixSigsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddSigButton" >
+                      <property name="text" >
+                        <string>Signature</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddMiniLexButton" >
+                      <property name="text" >
+                        <string>Mini-Lexicon</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddStemCountButton" >
+                      <property name="text" >
+                        <string>Stem Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddRobustnessButton" >
+                      <property name="text" >
+                        <string>Robustness</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddExemplarButton" >
+                      <property name="text" >
+                        <string>Exemplar</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_allPrefixSigsAddRemarksButton" >
+                      <property name="text" >
+                        <string>Remarks</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer17_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2_2" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_allPrefixSigsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2_2" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>136</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="minilexicon_words_file_layout_page" >
+      <attribute name="title" >
+        <string>Mini-Lexicon Words File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_3" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_miniWordsAnalyzedOnlyFlag" >
+                      <property name="text" >
+                        <string>Analyzed words only</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniWordsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniWordsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2_2" >
+                <property name="title" >
+                  <string>Word Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_miniWordsAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniWordsCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniWordsMorphemeCountSortFlag" >
+                      <property name="text" >
+                        <string>Morpheme count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_3" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>170</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_3" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_miniWordsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddWordButton" >
+                      <property name="text" >
+                        <string>Word</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddTypeButton" >
+                      <property name="text" >
+                        <string>Type</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer18_2_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddSignatureButton" >
+                      <property name="text" >
+                        <string>Signature</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddSourceButton" >
+                      <property name="text" >
+                        <string>Source</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddPrefixButton" >
+                      <property name="text" >
+                        <string>Prefix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddStemButton" >
+                      <property name="text" >
+                        <string>Stem</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniWordsAddSuffixButton" >
+                      <property name="text" >
+                        <string>Suffix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer19_2_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_3" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_miniWordsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_3" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>115</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="minilexicon_signatures_file_layout_page" >
+      <attribute name="title" >
+        <string>Mini-Lexicon Signatures File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2_4" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_miniSignaturesColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniSignaturesUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniSignaturesIncludeStemListFlag" >
+                      <property name="text" >
+                        <string>Include stem list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2_2_3" >
+                <property name="title" >
+                  <string>Signature Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_miniSignaturesAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniSignaturesCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniSignaturesStemCountSortFlag" >
+                      <property name="text" >
+                        <string>Stem count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2_4" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>250</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2_4" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_miniSignaturesLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddSigButton" >
+                      <property name="text" >
+                        <string>Signature</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddStemCountButton" >
+                      <property name="text" >
+                        <string>Stem Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16_4" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddRobustnessButton" >
+                      <property name="text" >
+                        <string>Robustness</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddExemplarButton" >
+                      <property name="text" >
+                        <string>Exemplar</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSignaturesAddRemarksButton" >
+                      <property name="text" >
+                        <string>Remarks</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer17_3" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>40</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2_4" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_miniSignaturesExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2_4" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>153</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="minilexicon_stems_file_layout_page" >
+      <attribute name="title" >
+        <string>Mini-Lexicon Stems File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_3_2" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_miniStemsColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniStemsUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2_2_2" >
+                <property name="title" >
+                  <string>Word Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_miniStemsAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniStemsCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_3_2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>170</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_3_2" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_miniStemsLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniStemsAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniStemsAddStemButton" >
+                      <property name="text" >
+                        <string>Stem</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniStemsAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniStemsAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer18_2_2_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>102</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniStemsAddSignatureButton" >
+                      <property name="text" >
+                        <string>Signature</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniStemsAddOriginButton" >
+                      <property name="text" >
+                        <string>Origin</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniStemsAddTypeButton" >
+                      <property name="text" >
+                        <string>Type</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer19_2_2_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>280</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_3_2" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_miniStemsExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_3_2" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>153</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="minilexicon_suffixes_file_layout_page" >
+      <attribute name="title" >
+        <string>Mini-Lexicon Suffixes File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2_3_3" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_miniSuffixesColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniSuffixesUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniSuffixesIncludeStemListFlag" >
+                      <property name="text" >
+                        <string>Include stem list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2_2_3_2" >
+                <property name="title" >
+                  <string>Suffix Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_miniSuffixesAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniSuffixesCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniSuffixesStemCountSortFlag" >
+                      <property name="text" >
+                        <string>Stem count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2_3_3" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>260</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2_3_3" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_miniSuffixesLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniSuffixesAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSuffixesAddSuffixButton" >
+                      <property name="text" >
+                        <string>Suffix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSuffixesAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSuffixesAddStemCountButton" >
+                      <property name="text" >
+                        <string>Stem Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniSuffixesAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16_3_3" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>20</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2_3_3" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_miniSuffixesExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2_3_3" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>186</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="minilexicon_prefixes_file_layout_page" >
+      <attribute name="title" >
+        <string>Mini-Lexicon Prefixes File Layout</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <layout class="QHBoxLayout" >
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup5_2_2_2_3_3_2" >
+                <property name="title" >
+                  <string>Options</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QCheckBox" name="m_miniPrefixesColumnTitlesFlag" >
+                      <property name="text" >
+                        <string>Column titles</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniPrefixesUniformFieldWidthsFlag" >
+                      <property name="text" >
+                        <string>Uniform field widths</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QCheckBox" name="m_miniPrefixesIncludeStemListFlag" >
+                      <property name="text" >
+                        <string>Include stem list</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="Q3ButtonGroup" name="buttonGroup2_2_3_2_2" >
+                <property name="title" >
+                  <string>Prefix Order</string>
+                </property>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QRadioButton" name="m_miniPrefixesAlphabeticalSortFlag" >
+                      <property name="text" >
+                        <string>Alphabetical</string>
+                      </property>
+                      <property name="checked" >
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniPrefixesCorpusCountSortFlag" >
+                      <property name="text" >
+                        <string>Corpus count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QRadioButton" name="m_miniPrefixesStemCountSortFlag" >
+                      <property name="text" >
+                        <string>Stem count</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <spacer name="spacer20_2_2_2_3_3_2" >
+                <property name="sizeHint" >
+                  <size>
+                    <width>260</width>
+                    <height>20</height>
+                  </size>
+                </property>
+                <property name="sizeType" >
+                  <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                </property>
+              </spacer>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="Q3ButtonGroup" name="buttonGroup3_2_2_2_3_3_2" >
+            <property name="title" >
+              <string>Line Designer</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLineEdit" name="m_miniPrefixesLine" >
+                  <property name="text" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_miniPrefixesAddIndexButton" >
+                      <property name="text" >
+                        <string>Index</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniPrefixesAddPrefixButton" >
+                      <property name="text" >
+                        <string>Prefix</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniPrefixesAddCorpusCountButton" >
+                      <property name="text" >
+                        <string>Corpus Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniPrefixesAddStemCountButton" >
+                      <property name="text" >
+                        <string>Stem Count</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_miniPrefixesAddDescLengthButton" >
+                      <property name="text" >
+                        <string>Desc. Length</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer16_3_3_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>20</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3GroupBox" name="groupBox18_2_2_2_3_3_2" >
+            <property name="title" >
+              <string>Example Line</string>
+            </property>
+            <layout class="QVBoxLayout" >
+              <item>
+                <widget class="QLabel" name="m_miniPrefixesExampleText" >
+                  <property name="frameShape" >
+                    <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="text" >
+                    <string/>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <spacer name="spacer10_2_2_3_3_2" >
+            <property name="sizeHint" >
+              <size>
+                <width>20</width>
+                <height>186</height>
+              </size>
+            </property>
+            <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QWidget" name="overwrite_confirmation_page" >
+      <attribute name="title" >
+        <string>Confirmation</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+        <item>
+          <widget class="QLabel" name="m_confirmationLabel" >
+            <property name="text" >
+              <string>The following directory and files will be created/overwritten:</string>
+            </property>
+            <property name="scaledContents" >
+              <bool>false</bool>
+            </property>
+            <property name="alignment" >
+              <set>Qt::AlignTop|Qt::AlignLeft</set>
+            </property>
+            <property name="wordWrap" >
+              <bool>false</bool>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="Q3TextEdit" name="m_confirmation" />
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+  <tabstops>
+    <tabstop>m_projectName</tabstop>
+    <tabstop>m_language</tabstop>
+    <tabstop>m_researchers</tabstop>
+    <tabstop>m_brokenCorpusFlag</tabstop>
+    <tabstop>m_corpusWordsFlag</tabstop>
+    <tabstop>m_compoundsFlag</tabstop>
+    <tabstop>m_miniWordsFlag</tabstop>
+    <tabstop>m_miniSignaturesFlag</tabstop>
+    <tabstop>m_miniStemsFlag</tabstop>
+    <tabstop>m_miniSuffixesFlag</tabstop>
+    <tabstop>m_miniPrefixesFlag</tabstop>
+    <tabstop>m_simpleTextFlag</tabstop>
+    <tabstop>m_outputDirectory</tabstop>
+    <tabstop>m_outputDirBrowseButton</tabstop>
+  </tabstops>
+  <connections>
+    <connection>
+      <sender>m_allPrefixesAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixesAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixesAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixesAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixesAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixesAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixesAddMiniLexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixesAddMiniLexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixesAddPrefixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixesAddPrefixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixesAddStemCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixesAddStemCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixesFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixesCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixesLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateAllPrefixesExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddExemplarButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddExemplarButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddMiniLexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddMiniLexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddRemarksButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddRemarksButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddRobustnessButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddRobustnessButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddSigButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddSignatureButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsAddStemCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSigsAddStemCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allPrefixSignaturesCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_allPrefixSigsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateAllPrefixSigsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddMiniLexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddMiniLexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddOriginButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddOriginButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddSignatureButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddSignatureButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddStemButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddStemButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsAddTypeButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsAddTypeButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allStemsCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_allStemsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateAllStemsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixesAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixesAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixesAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesAddMiniLexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixesAddMiniLexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesAddStemCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixesAddStemCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesAddSuffixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixesAddSuffixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixesCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixesLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateAllSuffixesExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddExemplarButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddExemplarButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddMiniLexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddMiniLexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddRemarksButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddRemarksButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddRobustnessButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddRobustnessButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddSigButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddSignatureButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsAddStemCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSigsAddStemCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allSuffixSignaturesCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateAllSuffixSigsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allSuffixSigsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateAllSigsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddMiniLexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddMiniLexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddPrefixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddPrefixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddSignatureButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddSignatureButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddSourceButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddSourceButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddStemButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddStemButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddSuffixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddSuffixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddTypeButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddTypeButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsAddWordButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsAddWordButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>allWordsCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_allWordsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateAllWordsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_bothFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>bothToggledSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_brokenCorpusFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundColorButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>changeCompoundColorSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsAddMorphCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsAddMorphCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsAddMorphsButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsAddMorphsButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsAddParseButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsAddParseButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsAddPrefixnessButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsAddPrefixnessButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsAddSuffixnessButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsAddSuffixnessButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>compoundsCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateCompoundsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_compoundsMorphemeFieldDelimiter</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateCompoundsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>corpusWordsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>corpusWordsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsAddMorphCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>corpusWordsAddMorphCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsAddMorphsButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>corpusWordsAddMorphsButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsAddWordButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>corpusWordsAddWordButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>corpusWordsCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateCorpusWordsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_corpusWordsMorphemeFieldDelimiter</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateCorpusWordsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_linkersAddCompoundCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>linkersAddCompoundCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_linkersAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>linkersAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_linkersAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>linkersAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_linkersAddLinkerButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>linkersAddLinkerButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_linkersLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateLinkersExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_markUpFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>markUpToggledSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniPrefixesAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniPrefixesAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniPrefixesAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesAddPrefixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniPrefixesAddPrefixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesAddStemCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniPrefixesAddStemCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>prefixesCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_miniPrefixesLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateMiniPrefixesExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddExemplarButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddExemplarButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddRemarksButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddRemarksButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddRobustnessButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddRobustnessButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddSigButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddSignatureButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesAddStemCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSignaturesAddStemCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>signaturesCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSignaturesLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateMiniSignaturesExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniStemsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniStemsAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniStemsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsAddOriginButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniStemsAddOriginButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsAddSignatureButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniStemsAddSignatureButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsAddStemButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniStemsAddStemButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsAddTypeButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniStemsAddTypeButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>stemsCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_miniStemsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateMiniStemsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSuffixesAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSuffixesAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSuffixesAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesAddStemCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSuffixesAddStemCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesAddSuffixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniSuffixesAddSuffixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>suffixesCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_miniSuffixesLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateMiniSuffixesExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddCorpusCountButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddCorpusCountButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddDescLengthButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddDescLengthButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddIndexButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddIndexButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddPrefixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddPrefixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddSignatureButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddSignatureButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddSourceButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddSourceButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddStemButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddStemButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddSuffixButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddSuffixButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddTypeButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddTypeButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsAddWordButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>miniWordsAddWordButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>wordsCheckedSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_miniWordsLine</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateMiniWordsExampleSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_outputDirBrowseButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>browseOutputDirSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_outputDirBrowseButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_outputDirectory</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_prefixBoldFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_prefixColorButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>changePrefixColorSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_prefixItalicFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_projectName</sender>
+      <signal>lostFocus()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_signatureBoldFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_signatureColorButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>changeSignatureColorSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_signatureItalicFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_simpleTextFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>simpleTextToggledSlot(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_stemBoldFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_stemColorButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>changeStemColorSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_stemItalicFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_suffixBoldFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_suffixColorButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>changeSuffixColorSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_suffixItalicFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_wordBoldFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_wordColorButton</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>changeWordColorSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_wordItalicFlag</sender>
+      <signal>clicked()</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>updateStylesSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_simpleTextFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_markUpFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_bothFlag</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>ExportWizardBase</receiver>
+      <slot>validateProjectInformationSlot()</slot>
+    </connection>
+  </connections>
+</ui>

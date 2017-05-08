@@ -1,0 +1,24 @@
+This directory contains icons for use by Linguistica:
+
+favicon.xpm:	Linguistica logo, 32x32
+open.xpm:	"Open file" icon
+save.xpm:	Dark green diskette icon
+new.xpm:	Blank page ("new document") icon
+reload.xpm:	Light green cycle on page ("refresh document") icon
+uofc.xpm:	Photograph of a building at the University of Chicago
+splash.png:	Linguistica splash screen
+
+Adding another icon is a multi-step process:
+
+1. Add an image file (preferably .png) to this directory.
+
+2. Add the image filename to linguistica.qrc (this can be
+   done within Qt Designer by opening linguisticamainwindowbase.ui
+   and choosing Edit Resources in the Resource Browser window).
+
+3. Set the icon for the relevant action of widget to
+   ":/icons/<image filename>" in linguisticamainwindowbase.ui.
+   (Within Qt Designer, choose the relevant toolbar button from the
+   actions list, click "..." to pick an alternate icon, specify
+   that the icon will come from a resource file, then choose
+   the appropriate image.)

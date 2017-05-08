@@ -1,0 +1,212 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>PropertiesDialogBase</class>
+  <widget class="QDialog" name="PropertiesDialogBase" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>325</width>
+        <height>619</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Properties</string>
+    </property>
+    <layout class="QVBoxLayout" >
+      <item>
+        <widget class="Q3GroupBox" name="rectGeometryGroupBox" >
+          <property name="enabled" >
+            <bool>true</bool>
+          </property>
+          <property name="frameShape" >
+            <enum>Q3GroupBox::Box</enum>
+          </property>
+          <property name="frameShadow" >
+            <enum>Q3GroupBox::Sunken</enum>
+          </property>
+          <property name="title" >
+            <string>State Property</string>
+          </property>
+          <layout class="QVBoxLayout" >
+            <item>
+              <layout class="QHBoxLayout" >
+                <item>
+                  <widget class="QLabel" name="xLabel" >
+                    <property name="text" >
+                      <string>StateNumber:</string>
+                    </property>
+                    <property name="wordWrap" >
+                      <bool>false</bool>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="QLineEdit" name="StateNumber" >
+                    <property name="enabled" >
+                      <bool>false</bool>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </item>
+            <item>
+              <layout class="QHBoxLayout" >
+                <item>
+                  <widget class="QLabel" name="widthLabel" >
+                    <property name="text" >
+                      <string>Words Passing :</string>
+                    </property>
+                    <property name="wordWrap" >
+                      <bool>false</bool>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="QLineEdit" name="WordsPassing" >
+                    <property name="enabled" >
+                      <bool>false</bool>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </item>
+            <item>
+              <layout class="QHBoxLayout" >
+                <item>
+                  <widget class="QLabel" name="widthLabel_2" >
+                    <property name="text" >
+                      <string>Layer Number :</string>
+                    </property>
+                    <property name="wordWrap" >
+                      <bool>false</bool>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="QLineEdit" name="LayerNumber" >
+                    <property name="enabled" >
+                      <bool>false</bool>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </item>
+          </layout>
+        </widget>
+      </item>
+      <item>
+        <widget class="Q3GroupBox" name="lineGeometryGroupBox" >
+          <property name="title" >
+            <string>Morpheme Choices</string>
+          </property>
+          <layout class="QVBoxLayout" >
+            <item>
+              <widget class="Q3ListBox" name="MorphemeChoices" >
+                <property name="enabled" >
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+      <item>
+        <widget class="Q3GroupBox" name="lineGeometryGroupBox_2" >
+          <property name="title" >
+            <string>Parent Morphemes</string>
+          </property>
+          <layout class="QVBoxLayout" >
+            <item>
+              <widget class="Q3ListBox" name="ParentMorphemes" >
+                <property name="enabled" >
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+      <item>
+        <widget class="Q3GroupBox" name="lineGeometryGroupBox_2_2" >
+          <property name="title" >
+            <string>Ancestors</string>
+          </property>
+          <layout class="QVBoxLayout" >
+            <item>
+              <widget class="Q3ListBox" name="Ancestors" >
+                <property name="enabled" >
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" >
+          <item>
+            <spacer name="spacer23" >
+              <property name="sizeHint" >
+                <size>
+                  <width>40</width>
+                  <height>20</height>
+                </size>
+              </property>
+              <property name="sizeType" >
+                <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </spacer>
+          </item>
+          <item>
+            <widget class="QPushButton" name="okButton" >
+              <property name="text" >
+                <string>OK</string>
+              </property>
+              <property name="default" >
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <spacer name="spacer22" >
+              <property name="sizeHint" >
+                <size>
+                  <width>40</width>
+                  <height>20</height>
+                </size>
+              </property>
+              <property name="sizeType" >
+                <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </spacer>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+  <tabstops>
+    <tabstop>okButton</tabstop>
+  </tabstops>
+  <includes>
+    <include location="global" >q3canvas.h</include>
+  </includes>
+  <connections>
+    <connection>
+      <sender>okButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PropertiesDialogBase</receiver>
+      <slot>accept()</slot>
+    </connection>
+  </connections>
+</ui>

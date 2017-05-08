@@ -1,0 +1,198 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>CorpusViewDialogBase</class>
+  <widget class="QDialog" name="CorpusViewDialogBase" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>839</width>
+        <height>721</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Linguistica : Corpus View</string>
+    </property>
+    <property name="sizeGripEnabled" >
+      <bool>true</bool>
+    </property>
+    <layout class="QVBoxLayout" >
+      <item>
+        <layout class="QHBoxLayout" >
+          <item>
+            <widget class="Q3GroupBox" name="groupBox1" >
+              <property name="maximumSize" >
+                <size>
+                  <width>32767</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="title" >
+                <string>Options</string>
+              </property>
+              <layout class="QHBoxLayout" >
+                <item>
+                  <widget class="QCheckBox" name="m_bindScrollBarsCheckBox" >
+                    <property name="text" >
+                      <string>&amp;Bind scroll bars</string>
+                    </property>
+                    <property name="shortcut" >
+                      <string>Alt+B</string>
+                    </property>
+                    <property name="checked" >
+                      <bool>true</bool>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="QCheckBox" name="m_wordWrapCheckBox" >
+                    <property name="text" >
+                      <string>&amp;Word wrap</string>
+                    </property>
+                    <property name="shortcut" >
+                      <string>Alt+W</string>
+                    </property>
+                    <property name="checked" >
+                      <bool>true</bool>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="QCheckBox" name="m_showMarkedUpTextCheckBox" >
+                    <property name="enabled" >
+                      <bool>false</bool>
+                    </property>
+                    <property name="text" >
+                      <string>&amp;Show marked-up text</string>
+                    </property>
+                    <property name="shortcut" >
+                      <string>Alt+S</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </item>
+          <item>
+            <spacer name="spacer4" >
+              <property name="sizeHint" >
+                <size>
+                  <width>329</width>
+                  <height>20</height>
+                </size>
+              </property>
+              <property name="sizeType" >
+                <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </spacer>
+          </item>
+        </layout>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" >
+          <item>
+            <widget class="Q3TextEdit" name="m_leftTextEdit" >
+              <property name="readOnly" >
+                <bool>true</bool>
+              </property>
+              <property name="undoRedoEnabled" >
+                <bool>false</bool>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="Q3TextEdit" name="m_rightTextEdit" >
+              <property name="readOnly" >
+                <bool>true</bool>
+              </property>
+              <property name="undoRedoEnabled" >
+                <bool>false</bool>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" >
+          <property name="margin" >
+            <number>0</number>
+          </property>
+          <property name="spacing" >
+            <number>6</number>
+          </property>
+          <item>
+            <spacer name="Horizontal Spacing2" >
+              <property name="sizeHint" >
+                <size>
+                  <width>290</width>
+                  <height>20</height>
+                </size>
+              </property>
+              <property name="sizeType" >
+                <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </spacer>
+          </item>
+          <item>
+            <widget class="QPushButton" name="buttonOk" >
+              <property name="text" >
+                <string>&amp;Close</string>
+              </property>
+              <property name="shortcut" >
+                <string>Alt+C</string>
+              </property>
+              <property name="autoDefault" >
+                <bool>true</bool>
+              </property>
+              <property name="default" >
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+  <connections>
+    <connection>
+      <sender>buttonOk</sender>
+      <signal>clicked()</signal>
+      <receiver>CorpusViewDialogBase</receiver>
+      <slot>accept()</slot>
+    </connection>
+    <connection>
+      <sender>m_showMarkedUpTextCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>CorpusViewDialogBase</receiver>
+      <slot>showMarkedUpText(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_leftTextEdit</sender>
+      <signal>contentsMoving(int,int)</signal>
+      <receiver>CorpusViewDialogBase</receiver>
+      <slot>moveRightView(int,int)</slot>
+    </connection>
+    <connection>
+      <sender>m_rightTextEdit</sender>
+      <signal>contentsMoving(int,int)</signal>
+      <receiver>CorpusViewDialogBase</receiver>
+      <slot>moveLeftView(int,int)</slot>
+    </connection>
+    <connection>
+      <sender>m_wordWrapCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>CorpusViewDialogBase</receiver>
+      <slot>wordWrap(bool)</slot>
+    </connection>
+  </connections>
+</ui>

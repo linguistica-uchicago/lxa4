@@ -1,0 +1,1738 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>PreferencesDialogBase</class>
+  <widget class="QDialog" name="PreferencesDialogBase" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>534</width>
+        <height>459</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Linguistica : Preferences</string>
+    </property>
+    <property name="windowIcon" >
+      <pixmap>image0</pixmap>
+    </property>
+    <property name="sizeGripEnabled" >
+      <bool>false</bool>
+    </property>
+    <property name="modal" >
+      <bool>true</bool>
+    </property>
+    <layout class="QVBoxLayout" >
+      <item>
+        <widget class="QTabWidget" name="tabWidget" >
+          <property name="whatsThis" stdset="0" >
+            <string/>
+          </property>
+          <widget class="QWidget" name="m_UIPage" >
+            <attribute name="title" >
+              <string>Miscellaneous</string>
+            </attribute>
+            <layout class="QHBoxLayout" >
+              <item>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="Q3GroupBox" name="groupBox1" >
+                      <property name="title" >
+                        <string>Morphology Highlighting</string>
+                      </property>
+                      <property name="toolTip" stdset="0" >
+                        <string/>
+                      </property>
+                      <property name="whatsThis" stdset="0" >
+                        <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Morphology Highlighting&lt;/tt>&lt;/b>&lt;/font>  &lt;p>Specify the color and style of each morpheme type.  Changes will appear in the 'Command Line' window (bottom right) only.&lt;/p></string>
+                      </property>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <layout class="QVBoxLayout" >
+                            <item>
+                              <widget class="QLabel" name="textLabel1" >
+                                <property name="text" >
+                                  <string>Element:</string>
+                                </property>
+                                <property name="wordWrap" >
+                                  <bool>false</bool>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <widget class="Q3ListBox" name="m_MH_ListBox" >
+                                <item>
+                                  <property name="text" >
+                                    <string>Affix</string>
+                                  </property>
+                                </item>
+                                <item>
+                                  <property name="text" >
+                                    <string>Signature</string>
+                                  </property>
+                                </item>
+                                <item>
+                                  <property name="text" >
+                                    <string>Stem</string>
+                                  </property>
+                                </item>
+                                <item>
+                                  <property name="text" >
+                                    <string>Word</string>
+                                  </property>
+                                </item>
+                                <item>
+                                  <property name="text" >
+                                    <string>Error</string>
+                                  </property>
+                                </item>
+                              </widget>
+                            </item>
+                            <item>
+                              <widget class="QLabel" name="textLabel2" >
+                                <property name="text" >
+                                  <string>Preview:</string>
+                                </property>
+                                <property name="wordWrap" >
+                                  <bool>false</bool>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <widget class="Q3TextEdit" name="m_MH_PreviewLineEdit" >
+                                <property name="maximumSize" >
+                                  <size>
+                                    <width>102</width>
+                                    <height>25</height>
+                                  </size>
+                                </property>
+                                <property name="text" >
+                                  <string>Preview</string>
+                                </property>
+                                <property name="wordWrap" >
+                                  <enum>Q3TextEdit::WidgetWidth</enum>
+                                </property>
+                                <property name="readOnly" >
+                                  <bool>true</bool>
+                                </property>
+                                <property name="undoRedoEnabled" >
+                                  <bool>false</bool>
+                                </property>
+                              </widget>
+                            </item>
+                          </layout>
+                        </item>
+                        <item>
+                          <layout class="QVBoxLayout" >
+                            <item>
+                              <widget class="QCheckBox" name="m_MH_BoldCheckBox" >
+                                <property name="text" >
+                                  <string>Bold</string>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <widget class="QCheckBox" name="m_MH_ItalicCheckBox" >
+                                <property name="text" >
+                                  <string>Italic</string>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <widget class="QCheckBox" name="m_MH_UnderlineCheckBox" >
+                                <property name="text" >
+                                  <string>Underline</string>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="spacer4" >
+                                <property name="sizeHint" >
+                                  <size>
+                                    <width>20</width>
+                                    <height>25</height>
+                                  </size>
+                                </property>
+                                <property name="sizeType" >
+                                  <enum>QSizePolicy::Expanding</enum>
+                                </property>
+                                <property name="orientation" >
+                                  <enum>Qt::Vertical</enum>
+                                </property>
+                              </spacer>
+                            </item>
+                            <item>
+                              <widget class="QPushButton" name="m_MH_ColorPushButton" >
+                                <property name="minimumSize" >
+                                  <size>
+                                    <width>60</width>
+                                    <height>25</height>
+                                  </size>
+                                </property>
+                                <property name="maximumSize" >
+                                  <size>
+                                    <width>60</width>
+                                    <height>25</height>
+                                  </size>
+                                </property>
+                                <property name="text" >
+                                  <string>Color</string>
+                                </property>
+                              </widget>
+                            </item>
+                          </layout>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="Q3GroupBox" name="groupBox2" >
+                      <property name="maximumSize" >
+                        <size>
+                          <width>32767</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="lineWidth" >
+                        <number>1</number>
+                      </property>
+                      <property name="margin" >
+                        <number>0</number>
+                      </property>
+                      <property name="title" >
+                        <string>Default Screen Font</string>
+                      </property>
+                      <property name="toolTip" stdset="0" >
+                        <string/>
+                      </property>
+                      <property name="whatsThis" stdset="0" >
+                        <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Default Screen Font&lt;/tt>&lt;/b>&lt;/font>  &lt;p>Change the family, decoration, and size of the default screen font.  This will affect all screens and changes will remain after closing and reopening the program.&lt;/p>  &lt;p>The size and family of the 'Command Line' and 'Collection View' (right screens) can be changed under the 'Font' option of the 'View' menu, though this change will only be effective for the current session.&lt;/p></string>
+                      </property>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <widget class="Q3TextEdit" name="m_DSF_PreviewLineEdit" >
+                            <property name="text" >
+                              <string>Editable preview text...</string>
+                            </property>
+                            <property name="undoRedoEnabled" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <layout class="QHBoxLayout" >
+                            <item>
+                              <widget class="QPushButton" name="m_DSF_FontButton" >
+                                <property name="text" >
+                                  <string>Change Screen Font</string>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="spacer4_2" >
+                                <property name="sizeHint" >
+                                  <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                  </size>
+                                </property>
+                                <property name="sizeType" >
+                                  <enum>QSizePolicy::Expanding</enum>
+                                </property>
+                                <property name="orientation" >
+                                  <enum>Qt::Horizontal</enum>
+                                </property>
+                              </spacer>
+                            </item>
+                          </layout>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="Q3GroupBox" name="groupBox9" >
+                      <property name="title" >
+                        <string>General Options</string>
+                      </property>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <widget class="QCheckBox" name="m_NotificationsCheckBox" >
+                            <property name="text" >
+                              <string>Show notifications</string>
+                            </property>
+                            <property name="checked" >
+                              <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string/>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Show notifications&lt;/tt>&lt;/b>&lt;/font>  &lt;p>Toggles 'need save' notifications.&lt;/p>  &lt;p>If a new lexicon is read or the program is closed without having saved the data, a prompt will appear asking whether the data should be saved.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <layout class="QHBoxLayout" >
+                            <item>
+                              <widget class="QLineEdit" name="m_SigDelimiterLineEdit" >
+                                <property name="sizePolicy" >
+                                  <sizepolicy>
+                                    <hsizetype>0</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                  </sizepolicy>
+                                </property>
+                                <property name="minimumSize" >
+                                  <size>
+                                    <width>20</width>
+                                    <height>0</height>
+                                  </size>
+                                </property>
+                                <property name="maximumSize" >
+                                  <size>
+                                    <width>20</width>
+                                    <height>32767</height>
+                                  </size>
+                                </property>
+                                <property name="text" >
+                                  <string>.</string>
+                                </property>
+                                <property name="maxLength" >
+                                  <number>1</number>
+                                </property>
+                                <property name="cursorPosition" >
+                                  <number>1</number>
+                                </property>
+                                <property name="alignment" >
+                                  <set>Qt::AlignHCenter</set>
+                                </property>
+                                <property name="whatsThis" stdset="0" >
+                                  <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Signature delimiter&lt;/tt>&lt;/b>&lt;/font>  &lt;p>This character will be used to delimit the affixes of a signature when printed to the screen and output to file.&lt;/p></string>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <widget class="QLabel" name="textLabel1_2" >
+                                <property name="text" >
+                                  <string>Signature delimiter</string>
+                                </property>
+                                <property name="whatsThis" stdset="0" >
+                                  <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Signature delimiter&lt;/tt>&lt;/b>&lt;/font>  &lt;p>This character will be used to delimit the affixes of a signature when printed to the screen and output to file.&lt;/p></string>
+                                </property>
+                                <property name="wordWrap" >
+                                  <bool>false</bool>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="spacer11" >
+                                <property name="sizeHint" >
+                                  <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                  </size>
+                                </property>
+                                <property name="sizeType" >
+                                  <enum>QSizePolicy::Expanding</enum>
+                                </property>
+                                <property name="orientation" >
+                                  <enum>Qt::Horizontal</enum>
+                                </property>
+                              </spacer>
+                            </item>
+                          </layout>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="Q3ButtonGroup" name="buttonGroup2" >
+                      <property name="title" >
+                        <string>Line Final Hyphen</string>
+                      </property>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <widget class="QRadioButton" name="m_joinWithoutDashRadioButton" >
+                            <property name="text" >
+                              <string>Join word, remove dash</string>
+                            </property>
+                            <property name="checked" >
+                              <bool>true</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QRadioButton" name="m_joinWithDashRadioButton" >
+                            <property name="text" >
+                              <string>Join word, leave dash</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QRadioButton" name="m_doNotJoinRadioButton" >
+                            <property name="text" >
+                              <string>Do not join word</string>
+                            </property>
+                            <property name="checked" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="Q3ButtonGroup" name="buttonGroup2_2" >
+                      <property name="title" >
+                        <string>Word Internal Hyphen</string>
+                      </property>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <widget class="QCheckBox" name="m_removeHyphenCheckBox" >
+                            <property name="text" >
+                              <string>Remove hyphen from full word</string>
+                            </property>
+                            <property name="checked" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QRadioButton" name="m_includeFullHyphenatedWordOnlyRadioButton" >
+                            <property name="text" >
+                              <string>Include only full word in word list</string>
+                            </property>
+                            <property name="checked" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QRadioButton" name="m_includeSubstringsOfHyphenatedWordOnlyRadioButton" >
+                            <property name="text" >
+                              <string>Include only substrings in word list</string>
+                            </property>
+                            <property name="checked" >
+                              <bool>true</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QRadioButton" name="m_includeFullHyphenatedWordAndSubstringsRadioButton" >
+                            <property name="text" >
+                              <string>Include full word and substings</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer12_2" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>20</width>
+                          <height>60</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Vertical</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="lexicon_preprocessing_tab_page" >
+            <attribute name="title" >
+              <string>Lexicon Preprocessing</string>
+            </attribute>
+            <layout class="QHBoxLayout" >
+              <item>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="Q3GroupBox" name="groupBox3" >
+                      <property name="title" >
+                        <string>Character Combinations</string>
+                      </property>
+                      <property name="whatsThis" stdset="0" >
+                        <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Character Combinations&lt;/tt>&lt;/b>&lt;/font>  &lt;p>Combines multiple characters into one for analysis, displays and outputs the combination as multiple characters.&lt;/p>  &lt;p>To add a combination, simply write the string of characters to be combined in the field provided after clicking the 'New...' button.&lt;/p>
+&lt;p>Combinations are made after scrubbing.&lt;/p></string>
+                      </property>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <widget class="Q3ListBox" name="m_CC_ListBox" >
+                            <property name="maximumSize" >
+                              <size>
+                                <width>175</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="selectionMode" >
+                              <enum>Q3ListBox::Extended</enum>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <layout class="QHBoxLayout" >
+                            <item>
+                              <widget class="QPushButton" name="m_CC_NewButton" >
+                                <property name="maximumSize" >
+                                  <size>
+                                    <width>70</width>
+                                    <height>32767</height>
+                                  </size>
+                                </property>
+                                <property name="text" >
+                                  <string>New...</string>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <widget class="QPushButton" name="m_CC_RemoveButton" >
+                                <property name="enabled" >
+                                  <bool>false</bool>
+                                </property>
+                                <property name="maximumSize" >
+                                  <size>
+                                    <width>70</width>
+                                    <height>32767</height>
+                                  </size>
+                                </property>
+                                <property name="text" >
+                                  <string>Remove</string>
+                                </property>
+                              </widget>
+                            </item>
+                          </layout>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="Q3GroupBox" name="groupBox8" >
+                      <property name="title" >
+                        <string>Common Scrubbing Rules</string>
+                      </property>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <widget class="QCheckBox" name="m_makeLowerCaseCheckBox" >
+                            <property name="text" >
+                              <string>Make lower case</string>
+                            </property>
+                            <property name="shortcut" >
+                              <string/>
+                            </property>
+                            <property name="checked" >
+                              <bool>true</bool>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Make lower case&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Make all characters lower case.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Replaces all upper case characters in every word with its lower case equivalent.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QCheckBox" name="m_removeNumbersCheckBox" >
+                            <property name="text" >
+                              <string>Remove &amp;numbers</string>
+                            </property>
+                            <property name="shortcut" >
+                              <string>Alt+N</string>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove numbers&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove all numbers.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes every word that contains a digit (0-9) in every word. This might produce undesired results. For example, ordinal numbers (e.g. "4th") will also be removed.&lt;/p> &lt;p>More precise number removal rules can be created using the 'Advanced Scrubbing Rules' tools.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QCheckBox" name="m_removePrecedingPunctCheckBox" >
+                            <property name="text" >
+                              <string>Remove preceding punctuation:</string>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove preceding punctuation&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove all listed punctuation from the beginning of words.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes every character listed in the text field that occurs at the front of the word. Any character that is separated from the front word boundary by only another listed character or characters will also be removed.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QLineEdit" name="m_precedingPunctLineEdit" >
+                            <property name="enabled" >
+                              <bool>false</bool>
+                            </property>
+                            <property name="maximumSize" >
+                              <size>
+                                <width>175</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>"'$([{&lt;-*</string>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove preceding punctuation&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove all listed punctuation from the beginning of words.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes every character listed in the text field that occurs at the front of the word. Any character that is separated from the front word boundary by only another listed character or characters will also be removed.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QCheckBox" name="m_removeInternalPunctCheckBox" >
+                            <property name="text" >
+                              <string>Remove internal punctuation:</string>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove internal punctuation&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove all listed punctuation from the middle of words.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes every character listed in the text field that occurs inside the word. Any character that is separated from both word boundaries by any character not listed will be removed.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QLineEdit" name="m_internalPunctLineEdit" >
+                            <property name="enabled" >
+                              <bool>false</bool>
+                            </property>
+                            <property name="maximumSize" >
+                              <size>
+                                <width>175</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>.,</string>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove internal punctuation&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove all listed punctuation from the middle of words.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes every character listed in the text field that occurs inside the word. Any character that is separated from both word boundaries by any character not listed will be removed.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QCheckBox" name="m_removeFollowingPunctCheckBox" >
+                            <property name="text" >
+                              <string>Remove following punctuation:</string>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove following punctuation&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove all listed punctuation from the end of words.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes every character listed in the text field that occurs at the end of the word. Any character that is separated from the back word boundary by only another listed character or characters will also be removed.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QLineEdit" name="m_followingPunctLineEdit" >
+                            <property name="enabled" >
+                              <bool>false</bool>
+                            </property>
+                            <property name="maximumSize" >
+                              <size>
+                                <width>175</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>.,?!;:"')]}/></string>
+                            </property>
+                            <property name="whatsThis" stdset="0" >
+                              <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove following punctuation&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove all listed punctuation from the end of words.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes every character listed in the text field that occurs at the end of the word. Any character that is separated from the back word boundary by only another listed character or characters will also be removed.&lt;/p></string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="Q3GroupBox" name="m_newReplacementGroupBox" >
+                      <property name="title" >
+                        <string>Advanced Scrubbing Rules</string>
+                      </property>
+                      <property name="whatsThis" stdset="0" >
+                        <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>New replacement&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+  &lt;p>Create custom, regular expression replacement rules.&lt;/p>
+
+ 
+
+ 
+
+  &lt;p>Create scrubbing rules which replace every occurrence of the "Find" regular expression with the "Replace with" string.&lt;/p>
+
+ 
+
+ 
+
+  &lt;p>Variables matching a set of parentheses may be used in the replacement string to avoid deleting parts of the regular expression. The variables are numbers delimited with the escape character '\'.&lt;/p>
+
+ 
+
+ 
+
+  &lt;p>Following is an example of a replace rule using variables. To replace every occurrence of the letter 'u' that occurs between two other vowels with a 'w': 
+
+ 
+
+ 
+
+  &lt;blockquote>
+
+ 
+
+ 
+
+  Find: ([aeiou])u([aeiou])&lt;br>
+
+ 
+
+ 
+
+  Replace with: \1w\2&lt;br>&lt;br>
+
+ 
+
+ 
+
+  &lt;/blockquote>
+
+ 
+
+ 
+
+  The resulting replacement for the word 'naua' will be 'nawa'. If the two parenthesized expressions were not replaced as variables, the vowels on either side would be lost and the result would be 'nw'.&lt;/p>
+
+ 
+
+ 
+
+  &lt;p>For a good tutorial on regular expressions, see:
+
+ 
+
+ 
+
+  &lt;blockquote>
+
+ 
+
+ 
+
+  	http://www.regular-expressions.info&lt;br>
+
+ 
+
+ 
+
+  &lt;/blockquote>
+
+ 
+
+ 
+
+  &lt;/p></string>
+                      </property>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <widget class="QLabel" name="m_replaceTextLabel" >
+                            <property name="text" >
+                              <string>Find (regular expression):</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QLineEdit" name="m_replaceLineEdit" >
+                            <property name="minimumSize" >
+                              <size>
+                                <width>250</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QLabel" name="m_withTextLabel" >
+                            <property name="text" >
+                              <string>Replace with:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QLineEdit" name="m_withLineEdit" >
+                            <property name="minimumSize" >
+                              <size>
+                                <width>250</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <layout class="QHBoxLayout" >
+                            <item>
+                              <widget class="QPushButton" name="m_addButton" >
+                                <property name="enabled" >
+                                  <bool>false</bool>
+                                </property>
+                                <property name="text" >
+                                  <string>Add</string>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="spacer12" >
+                                <property name="sizeHint" >
+                                  <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                  </size>
+                                </property>
+                                <property name="sizeType" >
+                                  <enum>QSizePolicy::Expanding</enum>
+                                </property>
+                                <property name="orientation" >
+                                  <enum>Qt::Horizontal</enum>
+                                </property>
+                              </spacer>
+                            </item>
+                          </layout>
+                        </item>
+                        <item>
+                          <layout class="QHBoxLayout" >
+                            <item>
+                              <widget class="Q3ListBox" name="m_scrubListBox" >
+                                <property name="selectionMode" >
+                                  <enum>Q3ListBox::Extended</enum>
+                                </property>
+                                <property name="whatsThis" stdset="0" >
+                                  <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Scrubbing rules&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>An ordered list of scrubbing rules.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>This list contains all the scrubbing rules that will be used, organized in the order they will be applied to each word. Rules above will be applied below rules beneath.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>This list also includes rules from the "Scrubbing" tab. All available rules can be re-ordered and removed using the buttons on the right side of the list.&lt;/p></string>
+                                </property>
+                                <item>
+                                  <property name="text" >
+                                    <string>Make lower case</string>
+                                  </property>
+                                </item>
+                              </widget>
+                            </item>
+                            <item>
+                              <layout class="QVBoxLayout" >
+                                <item>
+                                  <widget class="QPushButton" name="m_moveUpButton" >
+                                    <property name="enabled" >
+                                      <bool>false</bool>
+                                    </property>
+                                    <property name="text" >
+                                      <string>Move up</string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0" >
+                                      <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Move up&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Move one or more rules up in the application order.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Moves all selected rules up one spot in the application order.&lt;/p></string>
+                                    </property>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QPushButton" name="m_moveDownButton" >
+                                    <property name="enabled" >
+                                      <bool>false</bool>
+                                    </property>
+                                    <property name="text" >
+                                      <string>Move down</string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0" >
+                                      <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Move down&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Move one or more rules down in the application order.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Moves all selected rules down one spot in the application order.&lt;/p></string>
+                                    </property>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <spacer name="spacer13" >
+                                    <property name="sizeHint" >
+                                      <size>
+                                        <width>20</width>
+                                        <height>40</height>
+                                      </size>
+                                    </property>
+                                    <property name="sizeType" >
+                                      <enum>QSizePolicy::Expanding</enum>
+                                    </property>
+                                    <property name="orientation" >
+                                      <enum>Qt::Vertical</enum>
+                                    </property>
+                                  </spacer>
+                                </item>
+                                <item>
+                                  <widget class="QPushButton" name="m_removeButton" >
+                                    <property name="enabled" >
+                                      <bool>false</bool>
+                                    </property>
+                                    <property name="text" >
+                                      <string>Remove</string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0" >
+                                      <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Remove&lt;/tt>&lt;/b>&lt;/font>&lt;br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Remove a rule from the scrubbing list.&lt;/p>
+
+ 
+
+ 
+
+ 
+
+ 
+
+  &lt;p>Removes all selected rules from the scrubbing list, including scrubbing rules from the "Scrubbing" tab.&lt;/p></string>
+                                    </property>
+                                  </widget>
+                                </item>
+                              </layout>
+                            </item>
+                          </layout>
+                        </item>
+                      </layout>
+                    </widget>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" >
+                      <item>
+                        <widget class="QPushButton" name="m_importRulesButton" >
+                          <property name="text" >
+                            <string>Import Rules</string>
+                          </property>
+                          <property name="whatsThis" stdset="0" >
+                            <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Import Rules&lt;/tt>&lt;/b>&lt;/font>
+&lt;p>Import scrubbing rules from a text file that were created by this or another program (usually Alchemist).&lt;/p></string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="m_exportRulesButton" >
+                          <property name="enabled" >
+                            <bool>true</bool>
+                          </property>
+                          <property name="text" >
+                            <string>Export Rules</string>
+                          </property>
+                          <property name="whatsThis" stdset="0" >
+                            <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Export Rules&lt;/tt>&lt;/b>&lt;/font>&lt;br>    &lt;p>Export scrubbing rules to a text file to be used by another program.&lt;/p></string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <spacer name="spacer20" >
+                          <property name="sizeHint" >
+                            <size>
+                              <width>40</width>
+                              <height>20</height>
+                            </size>
+                          </property>
+                          <property name="sizeType" >
+                            <enum>QSizePolicy::Expanding</enum>
+                          </property>
+                          <property name="orientation" >
+                            <enum>Qt::Horizontal</enum>
+                          </property>
+                        </spacer>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="function_parameters_tab_page" >
+            <attribute name="title" >
+              <string>Function Parameters</string>
+            </attribute>
+            <layout class="QHBoxLayout" >
+              <item>
+                <widget class="Q3ListView" name="m_paramListView" >
+                  <property name="whatsThis" stdset="0" >
+                    <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Function Parameters&lt;/tt>&lt;/b>&lt;/font>  &lt;p>Change parameters used by analytical functions within Linguistica.&lt;/p>  &lt;p>All listed parameters can be changed and will affect the analyses made by Linguistica. To reset any of the parameters to the defaults, use the buttons on the right side.&lt;/p></string>
+                  </property>
+                  <column>
+                    <property name="text" >
+                      <string>Parameter</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text" >
+                      <string>Value</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>false</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                </widget>
+              </item>
+              <item>
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="QPushButton" name="m_resetValuePushButton" >
+                      <property name="text" >
+                        <string>Reset Selected</string>
+                      </property>
+                      <property name="whatsThis" stdset="0" >
+                        <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Function Parameters&lt;/tt>&lt;/b>&lt;/font>  &lt;p>Change parameters used by analytical functions within Linguistica.&lt;/p>  &lt;p>All listed parameters can be changed and will affect the analyses made by Linguistica. To reset any of the parameters to the defaults, use the buttons on the right side.&lt;/p></string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="m_resetAllValsPushButton" >
+                      <property name="text" >
+                        <string>Reset All</string>
+                      </property>
+                      <property name="whatsThis" stdset="0" >
+                        <string>&lt;font color="#555500" size="+1">&lt;b>&lt;tt>Function Parameters&lt;/tt>&lt;/b>&lt;/font>  &lt;p>Change parameters used by analytical functions within Linguistica.&lt;/p>  &lt;p>All listed parameters can be changed and will affect the analyses made by Linguistica. To reset any of the parameters to the defaults, use the buttons on the right side.&lt;/p></string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer9" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>20</width>
+                          <height>40</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Vertical</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </widget>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" >
+          <item>
+            <widget class="QPushButton" name="m_LoadPrefsButton" >
+              <property name="sizePolicy" >
+                <sizepolicy>
+                  <hsizetype>0</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="maximumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="text" >
+                <string>Load</string>
+              </property>
+              <property name="toolTip" stdset="0" >
+                <string>Load Preferences</string>
+              </property>
+              <property name="whatsThis" stdset="0" >
+                <string>&lt;strong>Load Preferences&lt;/strong>  &lt;br>&lt;br>Load corpus or language specific preferences from a file.</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="m_SavePrefsButton" >
+              <property name="sizePolicy" >
+                <sizepolicy>
+                  <hsizetype>0</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="maximumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="text" >
+                <string>Save</string>
+              </property>
+              <property name="toolTip" stdset="0" >
+                <string>Save Preferences</string>
+              </property>
+              <property name="whatsThis" stdset="0" >
+                <string>&lt;strong>Save Preferences&lt;/strong>  &lt;br>&lt;br>Save corpus or language specific preferences to a file.</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <spacer name="spacer10" >
+              <property name="sizeHint" >
+                <size>
+                  <width>40</width>
+                  <height>20</height>
+                </size>
+              </property>
+              <property name="sizeType" >
+                <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </spacer>
+          </item>
+          <item>
+            <widget class="QPushButton" name="m_helpButton" >
+              <property name="text" >
+                <string>&amp;Help</string>
+              </property>
+              <property name="shortcut" >
+                <string>Alt+H</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <spacer name="Horizontal Spacing2" >
+              <property name="sizeHint" >
+                <size>
+                  <width>40</width>
+                  <height>20</height>
+                </size>
+              </property>
+              <property name="sizeType" >
+                <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </spacer>
+          </item>
+          <item>
+            <widget class="QPushButton" name="buttonOk" >
+              <property name="sizePolicy" >
+                <sizepolicy>
+                  <hsizetype>0</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="maximumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="text" >
+                <string>&amp;OK</string>
+              </property>
+              <property name="shortcut" >
+                <string/>
+              </property>
+              <property name="autoDefault" >
+                <bool>true</bool>
+              </property>
+              <property name="default" >
+                <bool>true</bool>
+              </property>
+              <property name="toolTip" stdset="0" >
+                <string>Accept</string>
+              </property>
+              <property name="whatsThis" stdset="0" >
+                <string>&lt;strong>Accept&lt;/strong> &lt;br>&lt;br>Accept preference changes.</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="buttonCancel" >
+              <property name="sizePolicy" >
+                <sizepolicy>
+                  <hsizetype>0</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="maximumSize" >
+                <size>
+                  <width>80</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="text" >
+                <string>&amp;Cancel</string>
+              </property>
+              <property name="shortcut" >
+                <string/>
+              </property>
+              <property name="autoDefault" >
+                <bool>true</bool>
+              </property>
+              <property name="toolTip" stdset="0" >
+                <string>Reject</string>
+              </property>
+              <property name="whatsThis" stdset="0" >
+                <string>&lt;strong>Reject&lt;/strong> &lt;br>&lt;br>Reject preference changes.</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11" />
+  <tabstops>
+    <tabstop>buttonOk</tabstop>
+    <tabstop>buttonCancel</tabstop>
+    <tabstop>tabWidget</tabstop>
+    <tabstop>m_MH_ListBox</tabstop>
+    <tabstop>m_MH_BoldCheckBox</tabstop>
+    <tabstop>m_MH_ItalicCheckBox</tabstop>
+    <tabstop>m_MH_UnderlineCheckBox</tabstop>
+  </tabstops>
+  <images>
+    <image name="image0" >
+      <data format="XPM.GZ" length="1722" >789c8593c98edb300c86ef790a63781b141ed9491c07450f99ada7163d16287a30bd46dee225762645dfbd2265259ee9147572f067fd227f92d2ddadf5fddb17ebf66ed1f541bf0fad300b5aeb363a96e5cb8f9f9f7e2d6e96ae45ffb5e5dc7c58dcd856687dadab98de95d80291d08f30235c06622bb6848f842be13a82c509e35af8c2271c195178c223ec1863833d6362f081702d0c968c8ec103a1b75cfada46c5e82d5d9db761dcb8b188086b46df0d454898326e0d46134ee21de166b35a3982f09ed15f2d35226322d4430884be3078d6b8761c9730260cbc95104818306e5460c696d15fb91a07c6adea16bb2a18c3d556af4a42549175813963e8ad1c1ed09131f23c8d4f84a1f07c8da70903edea85d1f5628dcf8cb1d272633f13c6629b3801e19ed10984c3aeecff3caf3500ffd6805985006d7a837734801ac328b693f735d72c610ad95e26ef6af28223815dcaaaca427b1eebe239e74858d56842feada90ef42d0e8c33a59f6bf4864a1557c46876ab32f2b90641da502134297022a05e402ba7849c0bbac886bc2f521d05106db52d86b9c606e5f4d09b3cd8b636ca63a0a2e14c83111c2e1e0bcad52a4308c55563436a8c50ab02280655605c57fb79ed0ded18a52a054e701c64930eb22c75ab2eb31810c6815e0a7c39d7bb664cfa12ae9a4c2fe971e4319ccff7a9f21257e5d573421e65d7a0b684e77b5a43dc4711742657924b5bc2141920e5990119681fc0f8c9da4105a651d1ca0830858442c98d266be5b455f7805fb150ce43b8d435b206a613a972a90ecaa142846b0f2147360476f2a83e3735e4ed531782d150de136f5511549b543bf3ddae06e8673d0418c73620a75c744f75813a4ac9fc1c02243d221f090aa742807c6ec71ededc8bf150156ad085e40374c8072cead7f38a6a39a02c508d9b92b6cd930a9a06f35cd84d3dc3244b103e17e3d4c4f9f9e1f387f669cc680e3976da2f5cfb334d0a0799d8b376bfbd5f6feeddfc32dffcfeb8f803707c7e70</data>
+    </image>
+  </images>
+  <connections>
+    <connection>
+      <sender>buttonCancel</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>reject()</slot>
+    </connection>
+    <connection>
+      <sender>buttonOk</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>accept()</slot>
+    </connection>
+    <connection>
+      <sender>m_LoadPrefsButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>loadPrefsButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_SavePrefsButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>savePrefsButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_helpButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>help()</slot>
+    </connection>
+    <connection>
+      <sender>m_MH_ListBox</sender>
+      <signal>clicked(Q3ListBoxItem*)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>mhListBoxHighlightedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_MH_BoldCheckBox</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>mhBoldCheckBoxClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_MH_ItalicCheckBox</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>mhItalicCheckBoxClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_MH_UnderlineCheckBox</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>mhUnderlineCheckBoxClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_MH_ColorPushButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>mhColorButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_DSF_FontButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>dsfFontButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_NotificationsCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>notificationsCheckBoxClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_SigDelimiterLineEdit</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>sigDelimiterChangedSlot(QString)</slot>
+    </connection>
+    <connection>
+      <sender>m_CC_ListBox</sender>
+      <signal>selectionChanged()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>comboListBoxSelectionChangedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_CC_NewButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>newComboButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_CC_RemoveButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>removeComboButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_makeLowerCaseCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>makeLowerCaseCheckBoxToggled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_removeNumbersCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>removeNumbersCheckBoxToggled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_removePrecedingPunctCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>removePrecedingPunctCheckBoxToggled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_precedingPunctLineEdit</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>precedingPunctLineEditTextChanged(QString)</slot>
+    </connection>
+    <connection>
+      <sender>m_removeInternalPunctCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>removeInternalPunctCheckBoxToggled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_internalPunctLineEdit</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>internalPunctLineEditTextChanged(QString)</slot>
+    </connection>
+    <connection>
+      <sender>m_removeFollowingPunctCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>removeFollowingPunctCheckBoxToggled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>m_followingPunctLineEdit</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>followingPunctLineEditTextChanged(QString)</slot>
+    </connection>
+    <connection>
+      <sender>m_replaceLineEdit</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>replaceStringsChanged()</slot>
+    </connection>
+    <connection>
+      <sender>m_withLineEdit</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>replaceStringsChanged()</slot>
+    </connection>
+    <connection>
+      <sender>m_addButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>addNewReplacementButtonPressed()</slot>
+    </connection>
+    <connection>
+      <sender>m_scrubListBox</sender>
+      <signal>selectionChanged()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>scrubListBoxSelectionChanged()</slot>
+    </connection>
+    <connection>
+      <sender>m_moveUpButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>moveUpButtonPressed()</slot>
+    </connection>
+    <connection>
+      <sender>m_moveDownButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>moveDownButtonPressed()</slot>
+    </connection>
+    <connection>
+      <sender>m_removeButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>removeReplacementButtonPressed()</slot>
+    </connection>
+    <connection>
+      <sender>m_importRulesButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>importRulesButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_exportRulesButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>exportRulesButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_joinWithoutDashRadioButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>joinWithoutDashRadioButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_joinWithDashRadioButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>joinWithDashRadioButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_doNotJoinRadioButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>doNotJoinRadioButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_includeSubstringsOfHyphenatedWordOnlyRadioButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>includeSubstringsOfHyphenatedWordOnlyRadioButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_includeFullHyphenatedWordOnlyRadioButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>includeFullHyphenatedWordOnlyRadioButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_includeFullHyphenatedWordAndSubstringsRadioButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>includeFullHyphenatedWordAndSubstringsRadioButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_removeHyphenCheckBox</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>removeHyphenCheckBoxClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_paramListView</sender>
+      <signal>itemRenamed(Q3ListViewItem*,int,QString)</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>paramListItemRenamedSlot(Q3ListViewItem*,int,QString)</slot>
+    </connection>
+    <connection>
+      <sender>m_resetAllValsPushButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>resetAllValsPushButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+      <sender>m_resetValuePushButton</sender>
+      <signal>clicked()</signal>
+      <receiver>PreferencesDialogBase</receiver>
+      <slot>resetValuePushButtonClickedSlot()</slot>
+    </connection>
+  </connections>
+</ui>
